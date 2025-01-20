@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragNDrop : MonoBehaviour
 {
-    Vector3 mousePos;
+    private Vector3 mousePos;
 
     private Vector3 GetMousePos()
     {
