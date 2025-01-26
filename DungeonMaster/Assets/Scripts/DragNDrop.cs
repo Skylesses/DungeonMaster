@@ -6,8 +6,8 @@ public class DragNDrop : MonoBehaviour
 {
     //obj's for dragging and dropping
     public GameObject dragObj;
-    //public GameObject dragPos;
-    //public float dropDistance;
+    public GameObject dragPos;
+    public float dropDistance;
 
     public bool mouseDown;
 
@@ -34,12 +34,23 @@ public class DragNDrop : MonoBehaviour
         mouseDown = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void DropObject()
     {
-        if (other.CompareTag(dragObj.tag) /*&& mouseDown == false*/)
+        float Distance = Vector3.Distance(dragObj.transform.position, dragPos.transform.position);
+        if(Distance < dropDistance && mouseDown == false)
+        {
+            dragObj.transform.position = dragPos.transform.position;
+            dragObj.transform.rotation = dragPos.transform.rotation;
+            Debug.Log("drop");
+        }
+    }
+
+    /*private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(dragObj.tag) && mouseDown == false)
         {
             dragObj.transform.position = other.transform.position;
             Debug.Log(other.name);
         }
-    }
+    }*/
 }
