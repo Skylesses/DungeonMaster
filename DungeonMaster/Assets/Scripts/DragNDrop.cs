@@ -21,6 +21,14 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         isLocked = false;
     }
 
+    private void Update()
+    {
+        if(isLocked == true)
+        {
+            dragObj.transform.position = dropPos.transform.position;
+        }
+    }
+
     public void DragObj()
     {
         if(!isLocked)
