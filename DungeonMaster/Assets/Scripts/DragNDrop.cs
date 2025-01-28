@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 {   
+    //dragobj and drop position
     public GameObject dropPos;
     private GameObject dragObj;
 
@@ -16,6 +17,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     private void Start()
     {
+        //set dragobj and starting position
         dragObj = this.gameObject;
         objStartPos = dragObj.transform.position;
         isLocked = false;
@@ -23,6 +25,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     private void Update()
     {
+        //lock obj's to dropspot for weapons on props
         if(isLocked == true)
         {
             dragObj.transform.position = dropPos.transform.position;
@@ -31,6 +34,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     public void DragObj()
     {
+        //drag
         if(!isLocked)
         {
             dragObj.transform.position = Input.mousePosition;
@@ -40,6 +44,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     public void DropObj()
     {
+        //drop
         float Distance = Vector3.Distance(dragObj.transform.position, dropPos.transform.position);
         if(Distance < dropDistance)
         {
@@ -54,6 +59,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {  
+        //reset after drop if needed
         if(eventData.button == PointerEventData.InputButton.Right)
         {
             dragObj.transform.position = objStartPos;
