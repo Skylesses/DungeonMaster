@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class ClampToScreen : MonoBehaviour
 {
-    public Camera cam;
-    private Vector3 screenBounds;
+    public RectTransform canvasRect;
+    private RectTransform obj;
 
-    private float objWidth;
-    private float objHeight;
-
-    private void Start()
+    void Start()
     {
-        cam = Camera.main;
-        screenBounds = cam.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, cam.transform.position.z));
-        SpriteRenderer sr = GetComponent<SpriteRenderer>();
-        objWidth = sr.bounds.extents.x;
-        objHeight = sr.bounds.extents.y;
+        obj = GetComponent<RectTransform>();
     }
-    // Update is called once per frame
+
     void Update()
     {
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -screenBounds.x + objWidth, screenBounds.x - objWidth),
-            Mathf.Clamp(transform.position.y, -screenBounds.y + objHeight, screenBounds.y - objHeight), transform.position.z);
+        ClampToBounds();
+    }
+
+    void ClampToBounds()
+    {
+        if (canvasRect == null || obj == null) return;
+
+        // get position of obj
+        Vector3[] canvasCorners = new Vector3[4];
+        canvasRect.GetWorldCorners(canvasCorners);
+
+        Vector3[] elementCorners = new Vector3[4];
+        obj.GetWorldCorners(elementCorners);
+
+        Vector3 position = obj.position;
+
+        // Clamp position
+        position.x = Mathf.Clamp(position.x, canvasCorners[0].x + obj.rect.width / 2, canvasCorners[2].x - obj.rect.width / 2);
+        position.y = Mathf.Clamp(position.y, canvasCorners[0].y + obj.rect.height / 2, canvasCorners[2].y - obj.rect.height / 2);
+        obj.position = position;
     }
 }
