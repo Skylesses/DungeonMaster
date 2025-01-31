@@ -11,11 +11,11 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     public float dropDistance;
 
-    public GameObject otherObj;
+    //public GameObject otherObj;
 
     public bool isLocked;
 
-    private DragNDrop otherObjscript;
+    //private DragNDrop otherObjscript;
 
     Vector3 objStartPos;
 
@@ -26,7 +26,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         objStartPos = dragObj.transform.position;
         isLocked = false;
 
-        otherObjscript = otherObj.GetComponent<DragNDrop>();
+        //otherObjscript = otherObj.GetComponent<DragNDrop>();
     }
 
     private void Update()
@@ -65,13 +65,13 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         }
 
         //other Obj in drop spot? --> Obj can't be dropped
-        if (otherObjscript != null && otherObjscript.isLocked == true)
+        /*if (otherObjscript != null && otherObjscript.isLocked == true)
         {
             Debug.Log("can't drop here");
             isLocked = false;
             dragObj.transform.position = objStartPos;
             return;
-        }
+        }*/
     }
 
     public void OnPointerClick(PointerEventData eventData)
