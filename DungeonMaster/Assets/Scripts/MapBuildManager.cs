@@ -18,8 +18,9 @@ public class MapBuildManager : MonoBehaviour
 
     private void Start()
     {
+        //set tile UI
         int i = 0;
-        foreach(Tile tile in tiles)
+        foreach (Tile tile in tiles)
         {
             GameObject UITile = new GameObject("UI Tile");
             UITile.transform.parent = tileGridUI;
@@ -31,7 +32,7 @@ public class MapBuildManager : MonoBehaviour
             Color tileColor = UIImage.color;
             tileColor.a = 0.5f;
 
-            if(i == selectedTile)
+            if (i == selectedTile)
             {
                 tileColor.a = 1f;
             }
@@ -41,4 +42,73 @@ public class MapBuildManager : MonoBehaviour
             i++;
         }
     }
+
+    private void Update()
+    {   //select tile
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            selectedTile = 0;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            selectedTile = 1;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            selectedTile = 2;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            selectedTile = 3;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            selectedTile = 4;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            selectedTile = 5;
+            RenderUITiles();
+        }
+
+        //place tile
+        if(Input.GetMouseButtonDown(0))
+        {
+            Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            tilemap.SetTile(tilemap.WorldToCell(position), tiles[selectedTile]);
+        }
+        //delete tile
+        if (Input.GetMouseButtonDown(1))
+        {
+            Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            tilemap.SetTile(tilemap.WorldToCell(position), null);
+        }
+    }
+
+    //select tile out of selection
+    void RenderUITiles()
+    {
+        int i = 0;
+        foreach(GameObject tile in UITiles)
+        {
+            Image UIImage = tile.GetComponent<Image>();
+            Color tileColor = UIImage.color;
+            tileColor.a = 0.5f;
+
+            if(i == selectedTile)
+            {
+                tileColor.a = 1;
+            }
+
+            UIImage.color = tileColor;
+
+            i++; 
+        }
+    }
 }
+

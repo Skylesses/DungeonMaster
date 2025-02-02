@@ -35,9 +35,7 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         if(isLocked == true)
         {
             dragObj.transform.position = dropPos.transform.position;
-        }
-
-        
+        }      
     }
 
     public void DragObj()
