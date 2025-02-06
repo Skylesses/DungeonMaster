@@ -75,9 +75,29 @@ public class MapBuildManager : MonoBehaviour
             selectedTile = 5;
             RenderUITiles();
         }
+        if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            selectedTile = 6;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha8))
+        {
+            selectedTile = 7;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            selectedTile = 8;
+            RenderUITiles();
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            selectedTile = 9;
+            RenderUITiles();
+        }
 
         //place tile
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             tilemap.SetTile(tilemap.WorldToCell(position), tiles[selectedTile]);
