@@ -7,6 +7,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
 {   
     //dragobj and drop position
     public GameObject[] dropPosArray;
+    public GameObject rightPos;
     private GameObject nearestDropPos;
     private GameObject dragObj;
 
@@ -16,7 +17,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
 
     public bool isLocked;
 
-    //private DragNDrop otherObjscript;
+    //private DragNDropStories otherObjscript;
 
     Vector3 objStartPos;
 
