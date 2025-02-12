@@ -760,6 +760,11 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 937383111}
+  - {fileID: 1901318571}
+  - {fileID: 1581831472}
+  - {fileID: 1668930680}
+  - {fileID: 1375549160}
   - {fileID: 296003982}
   - {fileID: 561864199}
   - {fileID: 983586274}
@@ -1130,7 +1135,7 @@ GameObject:
   - component: {fileID: 159335659}
   - component: {fileID: 159335663}
   - component: {fileID: 159335662}
-  - component: {fileID: 159335661}
+  - component: {fileID: 159335664}
   - component: {fileID: 159335660}
   m_Layer: 5
   m_Name: StoryPartShip1
@@ -1177,8 +1182,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 159335661}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 159335664}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -1193,8 +1198,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 159335661}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 159335664}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -1205,21 +1210,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &159335661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159335658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &159335662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1258,6 +1248,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159335658}
   m_CullTransparentMesh: 1
+--- !u!114 &159335664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159335658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &165111626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1694,7 @@ GameObject:
   - component: {fileID: 217987095}
   - component: {fileID: 217987099}
   - component: {fileID: 217987098}
-  - component: {fileID: 217987097}
+  - component: {fileID: 217987100}
   - component: {fileID: 217987096}
   m_Layer: 5
   m_Name: StoryPartJail3
@@ -1731,8 +1741,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 217987097}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 217987100}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -1747,8 +1757,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 217987097}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 217987100}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -1759,21 +1769,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &217987097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217987094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &217987098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1812,6 +1807,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 217987094}
   m_CullTransparentMesh: 1
+--- !u!114 &217987100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217987094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &224427526
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,7 +2143,7 @@ GameObject:
   - component: {fileID: 254818508}
   - component: {fileID: 254818512}
   - component: {fileID: 254818511}
-  - component: {fileID: 254818510}
+  - component: {fileID: 254818513}
   - component: {fileID: 254818509}
   m_Layer: 5
   m_Name: StoryPartTavern3
@@ -2175,8 +2190,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254818510}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 254818513}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -2191,8 +2206,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 254818510}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 254818513}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -2203,21 +2218,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &254818510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254818507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &254818511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2256,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254818507}
   m_CullTransparentMesh: 1
+--- !u!114 &254818513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254818507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &269673255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2421,7 +2441,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 937383111}
   - {fileID: 434794692}
   - {fileID: 1004578372}
   - {fileID: 254818508}
@@ -3077,7 +3096,7 @@ GameObject:
   - component: {fileID: 434794692}
   - component: {fileID: 434794696}
   - component: {fileID: 434794695}
-  - component: {fileID: 434794694}
+  - component: {fileID: 434794697}
   - component: {fileID: 434794693}
   m_Layer: 5
   m_Name: StoryPartTavern1
@@ -3124,8 +3143,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 434794694}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 434794697}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -3140,8 +3159,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 434794694}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 434794697}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -3152,21 +3171,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &434794694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434794691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &434794695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3205,6 +3209,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434794691}
   m_CullTransparentMesh: 1
+--- !u!114 &434794697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434794691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &557698769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,7 +3558,7 @@ GameObject:
   - component: {fileID: 590320454}
   - component: {fileID: 590320458}
   - component: {fileID: 590320457}
-  - component: {fileID: 590320456}
+  - component: {fileID: 590320459}
   - component: {fileID: 590320455}
   m_Layer: 5
   m_Name: StoryPartJail5
@@ -3581,8 +3605,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 590320456}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 590320459}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -3597,8 +3621,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 590320456}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 590320459}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -3609,21 +3633,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &590320456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590320453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &590320457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3662,6 +3671,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 590320453}
   m_CullTransparentMesh: 1
+--- !u!114 &590320459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590320453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &626584212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5516,11 +5545,11 @@ RectTransform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 296003982}
+  m_Father: {fileID: 80471217}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -685, y: -18}
+  m_AnchoredPosition: {x: -733, y: 430}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &937383112
@@ -5617,7 +5646,7 @@ GameObject:
   - component: {fileID: 976620302}
   - component: {fileID: 976620306}
   - component: {fileID: 976620305}
-  - component: {fileID: 976620304}
+  - component: {fileID: 976620307}
   - component: {fileID: 976620303}
   m_Layer: 5
   m_Name: StoryPartShip5
@@ -5664,8 +5693,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 976620304}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 976620307}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -5680,8 +5709,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 976620304}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 976620307}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -5692,21 +5721,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &976620304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976620301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &976620305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5745,6 +5759,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976620301}
   m_CullTransparentMesh: 1
+--- !u!114 &976620307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976620301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &980733633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6005,7 +6039,7 @@ GameObject:
   - component: {fileID: 1004578372}
   - component: {fileID: 1004578376}
   - component: {fileID: 1004578375}
-  - component: {fileID: 1004578374}
+  - component: {fileID: 1004578377}
   - component: {fileID: 1004578373}
   m_Layer: 5
   m_Name: StoryPartTavern2
@@ -6052,8 +6086,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1004578374}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1004578377}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -6068,8 +6102,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1004578374}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1004578377}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -6080,21 +6114,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1004578374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004578371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1004578375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6133,6 +6152,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004578371}
   m_CullTransparentMesh: 1
+--- !u!114 &1004578377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004578371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1015346939
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,7 +6235,7 @@ GameObject:
   - component: {fileID: 1016960603}
   - component: {fileID: 1016960607}
   - component: {fileID: 1016960606}
-  - component: {fileID: 1016960605}
+  - component: {fileID: 1016960608}
   - component: {fileID: 1016960604}
   m_Layer: 5
   m_Name: StoryPartShip3
@@ -6243,8 +6282,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1016960605}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1016960608}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -6259,8 +6298,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1016960605}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1016960608}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -6271,21 +6310,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1016960605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016960602}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1016960606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6324,6 +6348,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1016960602}
   m_CullTransparentMesh: 1
+--- !u!114 &1016960608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016960602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1083712076
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,7 +6737,7 @@ GameObject:
   - component: {fileID: 1139355040}
   - component: {fileID: 1139355044}
   - component: {fileID: 1139355043}
-  - component: {fileID: 1139355042}
+  - component: {fileID: 1139355045}
   - component: {fileID: 1139355041}
   m_Layer: 5
   m_Name: StoryPartWoods2
@@ -6740,8 +6784,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1139355042}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1139355045}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -6756,8 +6800,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1139355042}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1139355045}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -6768,21 +6812,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1139355042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139355039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1139355043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6821,6 +6850,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139355039}
   m_CullTransparentMesh: 1
+--- !u!114 &1139355045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139355039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1151850979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7110,7 +7159,7 @@ GameObject:
   - component: {fileID: 1195873141}
   - component: {fileID: 1195873145}
   - component: {fileID: 1195873144}
-  - component: {fileID: 1195873143}
+  - component: {fileID: 1195873146}
   - component: {fileID: 1195873142}
   m_Layer: 5
   m_Name: StoryPartWoods5
@@ -7157,8 +7206,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1195873143}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1195873146}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -7173,8 +7222,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1195873143}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1195873146}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -7185,21 +7234,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1195873143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195873140}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1195873144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7238,6 +7272,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1195873140}
   m_CullTransparentMesh: 1
+--- !u!114 &1195873146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195873140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1213797871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7793,7 +7847,7 @@ GameObject:
   - component: {fileID: 1245019365}
   - component: {fileID: 1245019369}
   - component: {fileID: 1245019368}
-  - component: {fileID: 1245019367}
+  - component: {fileID: 1245019370}
   - component: {fileID: 1245019366}
   m_Layer: 5
   m_Name: StoryPartJail2
@@ -7840,8 +7894,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1245019367}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1245019370}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -7856,8 +7910,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1245019367}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1245019370}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -7868,21 +7922,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1245019367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1245019364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1245019368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7921,6 +7960,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245019364}
   m_CullTransparentMesh: 1
+--- !u!114 &1245019370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245019364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1247055175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9039,7 +9098,7 @@ GameObject:
   - component: {fileID: 1347772979}
   - component: {fileID: 1347772983}
   - component: {fileID: 1347772982}
-  - component: {fileID: 1347772981}
+  - component: {fileID: 1347772984}
   - component: {fileID: 1347772980}
   m_Layer: 5
   m_Name: StoryPartWoods1
@@ -9086,8 +9145,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1347772981}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1347772984}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -9102,8 +9161,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1347772981}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1347772984}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -9114,21 +9173,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1347772981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1347772978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1347772982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9167,6 +9211,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347772978}
   m_CullTransparentMesh: 1
+--- !u!114 &1347772984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1347772978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1348622563
 GameObject:
   m_ObjectHideFlags: 0
@@ -9483,7 +9547,7 @@ GameObject:
   - component: {fileID: 1375201380}
   - component: {fileID: 1375201384}
   - component: {fileID: 1375201383}
-  - component: {fileID: 1375201382}
+  - component: {fileID: 1375201385}
   - component: {fileID: 1375201381}
   m_Layer: 5
   m_Name: StoryPartTavern5
@@ -9530,8 +9594,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1375201382}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1375201385}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -9546,8 +9610,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1375201382}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1375201385}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -9558,21 +9622,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1375201382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375201379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1375201383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9611,6 +9660,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1375201379}
   m_CullTransparentMesh: 1
+--- !u!114 &1375201385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375201379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
+--- !u!1 &1375549157
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375549160}
+  - component: {fileID: 1375549159}
+  - component: {fileID: 1375549158}
+  m_Layer: 5
+  m_Name: Image (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1375549158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375549157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1375549159
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375549157}
+  m_CullTransparentMesh: 1
+--- !u!224 &1375549160
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375549157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 80471217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -733, y: -393.96}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1424351707
 GameObject:
   m_ObjectHideFlags: 0
@@ -9883,7 +10027,7 @@ GameObject:
   - component: {fileID: 1460496353}
   - component: {fileID: 1460496357}
   - component: {fileID: 1460496356}
-  - component: {fileID: 1460496355}
+  - component: {fileID: 1460496358}
   - component: {fileID: 1460496354}
   m_Layer: 5
   m_Name: StoryPartWoods3
@@ -9930,8 +10074,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1460496355}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1460496358}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -9946,8 +10090,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1460496355}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1460496358}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -9958,21 +10102,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1460496355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1460496352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1460496356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10011,6 +10140,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460496352}
   m_CullTransparentMesh: 1
+--- !u!114 &1460496358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460496352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1502132375
 GameObject:
   m_ObjectHideFlags: 0
@@ -10022,7 +10171,7 @@ GameObject:
   - component: {fileID: 1502132376}
   - component: {fileID: 1502132380}
   - component: {fileID: 1502132379}
-  - component: {fileID: 1502132378}
+  - component: {fileID: 1502132381}
   - component: {fileID: 1502132377}
   m_Layer: 5
   m_Name: StoryPartWoods4
@@ -10069,8 +10218,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1502132378}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1502132381}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -10085,8 +10234,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1502132378}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1502132381}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -10097,21 +10246,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1502132378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1502132375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1502132379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10150,6 +10284,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502132375}
   m_CullTransparentMesh: 1
+--- !u!114 &1502132381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502132375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1524036147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10353,7 +10507,7 @@ GameObject:
   - component: {fileID: 1542897687}
   - component: {fileID: 1542897691}
   - component: {fileID: 1542897690}
-  - component: {fileID: 1542897689}
+  - component: {fileID: 1542897692}
   - component: {fileID: 1542897688}
   m_Layer: 5
   m_Name: StoryPartShip2
@@ -10400,8 +10554,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1542897689}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1542897692}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -10416,8 +10570,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1542897689}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1542897692}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -10428,21 +10582,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1542897689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542897686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1542897690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10481,6 +10620,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1542897686}
   m_CullTransparentMesh: 1
+--- !u!114 &1542897692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542897686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1544376481
 GameObject:
   m_ObjectHideFlags: 0
@@ -10831,7 +10990,7 @@ GameObject:
   - component: {fileID: 1570665604}
   - component: {fileID: 1570665608}
   - component: {fileID: 1570665607}
-  - component: {fileID: 1570665606}
+  - component: {fileID: 1570665609}
   - component: {fileID: 1570665605}
   m_Layer: 5
   m_Name: StoryPartTavern4
@@ -10878,8 +11037,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1570665606}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1570665609}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -10894,8 +11053,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1570665606}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1570665609}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -10906,21 +11065,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1570665606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1570665603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1570665607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10959,6 +11103,101 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570665603}
   m_CullTransparentMesh: 1
+--- !u!114 &1570665609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570665603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
+--- !u!1 &1581831469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1581831472}
+  - component: {fileID: 1581831471}
+  - component: {fileID: 1581831470}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1581831470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581831469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1581831471
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581831469}
+  m_CullTransparentMesh: 1
+--- !u!224 &1581831472
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1581831469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 80471217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -733, y: 25}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1600234885
 GameObject:
   m_ObjectHideFlags: 0
@@ -11660,6 +11899,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666117916}
   m_CullTransparentMesh: 1
+--- !u!1 &1668930677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668930680}
+  - component: {fileID: 1668930679}
+  - component: {fileID: 1668930678}
+  m_Layer: 5
+  m_Name: Image (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1668930678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668930677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1668930679
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668930677}
+  m_CullTransparentMesh: 1
+--- !u!224 &1668930680
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668930677}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 80471217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -733, y: -181}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1702227280
 GameObject:
   m_ObjectHideFlags: 0
@@ -12474,6 +12788,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1887299596}
   m_CullTransparentMesh: 1
+--- !u!1 &1901318568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1901318571}
+  - component: {fileID: 1901318570}
+  - component: {fileID: 1901318569}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1901318569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901318568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.09803922}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1901318570
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901318568}
+  m_CullTransparentMesh: 1
+--- !u!224 &1901318571
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901318568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 80471217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -733, y: 232}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1966539708
 GameObject:
   m_ObjectHideFlags: 0
@@ -12485,7 +12874,7 @@ GameObject:
   - component: {fileID: 1966539709}
   - component: {fileID: 1966539713}
   - component: {fileID: 1966539712}
-  - component: {fileID: 1966539711}
+  - component: {fileID: 1966539714}
   - component: {fileID: 1966539710}
   m_Layer: 5
   m_Name: StoryPartJail1
@@ -12532,8 +12921,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1966539711}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1966539714}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -12548,8 +12937,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1966539711}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 1966539714}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -12560,21 +12949,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1966539711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966539708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &1966539712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12613,6 +12987,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966539708}
   m_CullTransparentMesh: 1
+--- !u!114 &1966539714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966539708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &1996367561
 GameObject:
   m_ObjectHideFlags: 0
@@ -12902,7 +13296,7 @@ GameObject:
   - component: {fileID: 2002504350}
   - component: {fileID: 2002504354}
   - component: {fileID: 2002504353}
-  - component: {fileID: 2002504352}
+  - component: {fileID: 2002504355}
   - component: {fileID: 2002504351}
   m_Layer: 5
   m_Name: StoryPartJail4
@@ -12949,8 +13343,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2002504352}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 2002504355}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -12965,8 +13359,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2002504352}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 2002504355}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -12977,21 +13371,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2002504352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2002504349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &2002504353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13030,6 +13409,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002504349}
   m_CullTransparentMesh: 1
+--- !u!114 &2002504355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002504349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &2025263253
 GameObject:
   m_ObjectHideFlags: 0
@@ -13405,7 +13804,7 @@ GameObject:
   - component: {fileID: 2072867280}
   - component: {fileID: 2072867284}
   - component: {fileID: 2072867283}
-  - component: {fileID: 2072867282}
+  - component: {fileID: 2072867285}
   - component: {fileID: 2072867281}
   m_Layer: 5
   m_Name: StoryPartShip4
@@ -13452,8 +13851,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2072867282}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 2072867285}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -13468,8 +13867,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2072867282}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 2072867285}
+          m_TargetAssemblyTypeName: DragNDropStories, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -13480,21 +13879,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &2072867282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072867279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPos: {fileID: 937383110}
-  dropDistance: 10
-  isLocked: 0
 --- !u!114 &2072867283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13533,6 +13917,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072867279}
   m_CullTransparentMesh: 1
+--- !u!114 &2072867285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072867279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de86f5ef3b8f84fb3fc19f080110fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray:
+  - {fileID: 937383110}
+  - {fileID: 1901318568}
+  - {fileID: 1581831469}
+  - {fileID: 1668930677}
+  - {fileID: 1375549157}
+  dropDistance: 20
+  isLocked: 0
 --- !u!1 &2090476596
 GameObject:
   m_ObjectHideFlags: 0
