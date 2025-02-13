@@ -6,8 +6,9 @@ using UnityEngine.EventSystems;
 public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
 {   
     //dragobj and drop position
-    public GameObject[] dropPosArray;
+    public GameObject[] dropPosArray;    
     public GameObject rightPos;
+
     private GameObject nearestDropPos;
     private GameObject dragObj;
 
@@ -16,8 +17,9 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
     //public GameObject otherObj;
 
     public bool isLocked;
+    public bool correctPos;
 
-    //private DragNDropStories otherObjscript;
+    //private DragNDropStories otherObjScript;
 
     Vector3 objStartPos;
 
@@ -27,8 +29,9 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
         dragObj = this.gameObject;
         objStartPos = dragObj.transform.position;
         isLocked = false;
+        correctPos = false;
 
-        //otherObjscript = otherObj.GetComponent<DragNDrop>();
+        //otherObjScript = otherObj.GetComponent<DragNDropStories>();
     }
 
     public void DragObj()
@@ -37,13 +40,12 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
         if(!isLocked)
         {
             dragObj.transform.position = Input.mousePosition;
-        }
-       
+        }     
     }
 
     public void DropObj()
     {
-        //drop
+        //drop dragged obj
         float minDistance = dropDistance;
         nearestDropPos = null;
 
@@ -54,24 +56,33 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
             {
                 minDistance = Distance;
                 nearestDropPos = dropPos;
-            }    
+            }
         } 
-
+        //drop
         if (nearestDropPos != null)
         {
             isLocked = true;
             dragObj.transform.position = nearestDropPos.transform.position;
         }
+        //reset obj
         else
         {
             dragObj.transform.position = objStartPos;
+            correctPos = false;
+        }
+
+        //obj in the right drop position?
+        if(nearestDropPos == rightPos)
+        {
+            correctPos = true;
         }
 
         //other Obj in drop spot? --> Obj can't be dropped
-        /*if (otherObjscript != null && otherObjscript.isLocked == true)
+        /*if (otherObjScript != null && otherObjScript.isLocked == true)
         {
             Debug.Log("can't drop here");
             isLocked = false;
+            correctPos = false;
             dragObj.transform.position = objStartPos;
             return;
         }*/
@@ -84,6 +95,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
         {
             dragObj.transform.position = objStartPos;
             isLocked = false;
+            correctPos = false;
             nearestDropPos = null;
         }
     }
