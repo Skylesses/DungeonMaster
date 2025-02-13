@@ -36,7 +36,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
 
     public void DragObj()
     {
-        //drag
+        //drag the obj with the mouse
         if(!isLocked)
         {
             dragObj.transform.position = Input.mousePosition;
@@ -51,6 +51,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
 
         foreach (GameObject dropPos in dropPosArray)
         {
+            //check distance between dragged obj and drop spots
             float Distance = Vector3.Distance(dragObj.transform.position, dropPos.transform.position);
             if(Distance < minDistance)
             {
