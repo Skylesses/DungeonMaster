@@ -1493,6 +1493,7 @@ GameObject:
   - component: {fileID: 217987098}
   - component: {fileID: 217987100}
   - component: {fileID: 217987096}
+  - component: {fileID: 217987101}
   m_Layer: 5
   m_Name: StoryPartJail3
   m_TagString: Untagged
@@ -1637,6 +1638,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &217987101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217987094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &224427526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +1969,7 @@ GameObject:
   - component: {fileID: 254818511}
   - component: {fileID: 254818513}
   - component: {fileID: 254818509}
+  - component: {fileID: 254818514}
   m_Layer: 5
   m_Name: StoryPartTavern3
   m_TagString: Untagged
@@ -2099,6 +2114,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &254818514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254818507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &269673255
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,6 +3435,7 @@ GameObject:
   - component: {fileID: 590320457}
   - component: {fileID: 590320459}
   - component: {fileID: 590320455}
+  - component: {fileID: 590320460}
   m_Layer: 5
   m_Name: StoryPartJail5
   m_TagString: Untagged
@@ -3551,6 +3580,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &590320460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590320453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &626584212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5634,6 +5676,7 @@ GameObject:
   - component: {fileID: 976620305}
   - component: {fileID: 976620307}
   - component: {fileID: 976620303}
+  - component: {fileID: 976620308}
   m_Layer: 5
   m_Name: StoryPartShip5
   m_TagString: Untagged
@@ -5778,6 +5821,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &976620308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976620301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &980733633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6027,11 +6083,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000943314}
   m_CullTransparentMesh: 1
+--- !u!1 &1004578371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3752932010754312135, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+  m_PrefabInstance: {fileID: 8290029595708281176}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1004578372 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3811234090082836195, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
   m_PrefabInstance: {fileID: 8290029595708281176}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1004578378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004578371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1015346939
 GameObject:
   m_ObjectHideFlags: 0
@@ -6097,6 +6171,7 @@ GameObject:
   - component: {fileID: 1016960606}
   - component: {fileID: 1016960608}
   - component: {fileID: 1016960604}
+  - component: {fileID: 1016960609}
   m_Layer: 5
   m_Name: StoryPartShip3
   m_TagString: Untagged
@@ -6241,6 +6316,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1016960609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016960602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1083712076
 GameObject:
   m_ObjectHideFlags: 0
@@ -6687,6 +6775,7 @@ GameObject:
   - component: {fileID: 1139355043}
   - component: {fileID: 1139355045}
   - component: {fileID: 1139355041}
+  - component: {fileID: 1139355046}
   m_Layer: 5
   m_Name: StoryPartWoods2
   m_TagString: Untagged
@@ -6831,6 +6920,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1139355046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139355039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1151655213
 GameObject:
   m_ObjectHideFlags: 0
@@ -7197,6 +7299,7 @@ GameObject:
   - component: {fileID: 1195873144}
   - component: {fileID: 1195873146}
   - component: {fileID: 1195873142}
+  - component: {fileID: 1195873147}
   m_Layer: 5
   m_Name: StoryPartWoods5
   m_TagString: Untagged
@@ -7341,6 +7444,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1195873147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195873140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1213797871
 GameObject:
   m_ObjectHideFlags: 0
@@ -7973,6 +8089,7 @@ GameObject:
   - component: {fileID: 1245019368}
   - component: {fileID: 1245019370}
   - component: {fileID: 1245019366}
+  - component: {fileID: 1245019371}
   m_Layer: 5
   m_Name: StoryPartJail2
   m_TagString: Untagged
@@ -8117,6 +8234,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1245019371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245019364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1247055175
 GameObject:
   m_ObjectHideFlags: 0
@@ -9694,6 +9824,7 @@ GameObject:
   - component: {fileID: 1375201383}
   - component: {fileID: 1375201385}
   - component: {fileID: 1375201381}
+  - component: {fileID: 1375201386}
   m_Layer: 5
   m_Name: StoryPartTavern5
   m_TagString: Untagged
@@ -9838,6 +9969,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1375201386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375201379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1405585267
 GameObject:
   m_ObjectHideFlags: 0
@@ -10187,6 +10331,7 @@ GameObject:
   - component: {fileID: 1460496356}
   - component: {fileID: 1460496358}
   - component: {fileID: 1460496354}
+  - component: {fileID: 1460496359}
   m_Layer: 5
   m_Name: StoryPartWoods3
   m_TagString: Untagged
@@ -10331,6 +10476,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1460496359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460496352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1495624917
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,6 +10577,7 @@ GameObject:
   - component: {fileID: 1502132379}
   - component: {fileID: 1502132381}
   - component: {fileID: 1502132377}
+  - component: {fileID: 1502132382}
   m_Layer: 5
   m_Name: StoryPartWoods4
   m_TagString: Untagged
@@ -10563,6 +10722,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1502132382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502132375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1524036147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10628,6 +10800,7 @@ GameObject:
   - component: {fileID: 1542897690}
   - component: {fileID: 1542897692}
   - component: {fileID: 1542897688}
+  - component: {fileID: 1542897693}
   m_Layer: 5
   m_Name: StoryPartShip2
   m_TagString: Untagged
@@ -10772,6 +10945,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1542897693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542897686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1544376481
 GameObject:
   m_ObjectHideFlags: 0
@@ -11199,6 +11385,7 @@ GameObject:
   - component: {fileID: 1570665607}
   - component: {fileID: 1570665609}
   - component: {fileID: 1570665605}
+  - component: {fileID: 1570665610}
   m_Layer: 5
   m_Name: StoryPartTavern4
   m_TagString: Untagged
@@ -11343,6 +11530,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &1570665610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570665603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &1600234885
 GameObject:
   m_ObjectHideFlags: 0
@@ -13173,6 +13373,7 @@ GameObject:
   - component: {fileID: 2002504353}
   - component: {fileID: 2002504355}
   - component: {fileID: 2002504351}
+  - component: {fileID: 2002504356}
   m_Layer: 5
   m_Name: StoryPartJail4
   m_TagString: Untagged
@@ -13317,6 +13518,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &2002504356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002504349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &2025263253
 GameObject:
   m_ObjectHideFlags: 0
@@ -13694,6 +13908,7 @@ GameObject:
   - component: {fileID: 2072867283}
   - component: {fileID: 2072867285}
   - component: {fileID: 2072867281}
+  - component: {fileID: 2072867286}
   m_Layer: 5
   m_Name: StoryPartShip4
   m_TagString: Untagged
@@ -13838,6 +14053,19 @@ MonoBehaviour:
   dropDistance: 20
   isLocked: 0
   correctPos: 0
+--- !u!114 &2072867286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072867279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 304955f8487cd7747beff64b85e0f2e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasRect: {fileID: 80471217}
 --- !u!1 &2090476596
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,7 +14573,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3752932010754312135, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1004578378}
   m_SourcePrefab: {fileID: 100100000, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
