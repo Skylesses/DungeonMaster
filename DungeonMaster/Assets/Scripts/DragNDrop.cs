@@ -4,17 +4,19 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DragNDrop : MonoBehaviour,  IPointerClickHandler
-{   
+{
     //dragobj and drop position
-    public GameObject dropPos;
+    public GameObject[] dropPosArray;
+    
+    private GameObject nearestDropPos;
     private GameObject dragObj;
-
-    public float dropDistance;
 
     //public GameObject otherObj;
 
+    public float dropDistance;
     public bool isLocked;
-
+    
+    
     //private DragNDrop otherObjscript;
 
     Vector3 objStartPos;
@@ -34,14 +36,14 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         //lock obj's to dropspot for weapons on props
         if(isLocked == true)
         {
-            dragObj.transform.position = dropPos.transform.position;
+            dragObj.transform.position = nearestDropPos.transform.position;
         }      
     }
 
     public void DragObj()
     {
-        //drag
-        if(!isLocked)
+        //drag the obj with the mouse
+        if (!isLocked)
         {
             dragObj.transform.position = Input.mousePosition;
         }
@@ -50,13 +52,27 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
 
     public void DropObj()
     {
+        //drop dragged obj
+        float minDistance = dropDistance;
+        nearestDropPos = null;
+
+        foreach (GameObject dropPos in dropPosArray)
+        {
+            //check distance between dragged obj and drop spots
+            float Distance = Vector3.Distance(dragObj.transform.position, dropPos.transform.position);
+            if (Distance < minDistance)
+            {
+                minDistance = Distance;
+                nearestDropPos = dropPos;
+            }
+        }
         //drop
-        float Distance = Vector3.Distance(dragObj.transform.position, dropPos.transform.position);
-        if(Distance < dropDistance)
+        if (nearestDropPos != null)
         {
             isLocked = true;
-            dragObj.transform.position = dropPos.transform.position;
+            dragObj.transform.position = nearestDropPos.transform.position;
         }
+        //reset obj
         else
         {
             dragObj.transform.position = objStartPos;
