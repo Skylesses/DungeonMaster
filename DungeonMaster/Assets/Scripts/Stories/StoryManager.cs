@@ -3,7 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StoryManager : MonoBehaviour
-{
+{   
+    public GameObject storySelection;
+    public GameObject nextLevel;
+
+    private void Start()
+    {
+        storySelection.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {   
@@ -20,7 +28,9 @@ public class StoryManager : MonoBehaviour
             }
         }
         if(allCorrect)
-        {
+        {   
+            //show story selection
+            storySelection.SetActive(true);
             Debug.Log("you're god damn right");
         }
 
