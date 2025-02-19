@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragNDrop : MonoBehaviour,  IPointerClickHandler
+public class DragNDrop : MonoBehaviour, IPointerClickHandler
 {
     //dragobj and drop position
     public GameObject[] dropPosArray;
@@ -11,12 +11,12 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
     private GameObject nearestDropPos;
     private GameObject dragObj;
 
-    //public GameObject otherObj;
+    private static Dictionary<GameObject, GameObject> occupiedDropSpots = new Dictionary<GameObject, GameObject>();
 
     public float dropDistance;
     public bool isLocked;
     
-    
+    //public GameObject otherObj;
     //private DragNDrop otherObjscript;
 
     Vector3 objStartPos;
@@ -66,11 +66,20 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
                 nearestDropPos = dropPos;
             }
         }
-        //drop
+        
         if (nearestDropPos != null)
         {
+            //drop spot taken? --> reset obj
+            if (occupiedDropSpots.ContainsKey(nearestDropPos))
+            {
+                Debug.Log("can't drop here");
+                dragObj.transform.position = objStartPos;
+                return;
+            }
+            //drop
             isLocked = true;
             dragObj.transform.position = nearestDropPos.transform.position;
+            occupiedDropSpots[nearestDropPos] = dragObj;
         }
         //reset obj
         else
@@ -93,6 +102,10 @@ public class DragNDrop : MonoBehaviour,  IPointerClickHandler
         //reset after drop if needed
         if(eventData.button == PointerEventData.InputButton.Right)
         {
+            if (isLocked && occupiedDropSpots.ContainsKey(nearestDropPos))
+            {
+                occupiedDropSpots.Remove(nearestDropPos);
+            }
             dragObj.transform.position = objStartPos;
             isLocked = false;
         }
