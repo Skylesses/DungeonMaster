@@ -246,7 +246,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
   dropDistance: 30
   isLocked: 0
 --- !u!114 &1744157075446526296
