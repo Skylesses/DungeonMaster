@@ -5,6 +5,7 @@ using UnityEngine;
 public class MobStats : MonoBehaviour
 {
     public static bool sword;
+    public static bool club;
     public static bool spear;
     public static bool bow;
     public static bool shield;
@@ -13,6 +14,7 @@ public class MobStats : MonoBehaviour
     void Start()
     {
         sword = false;
+        club = false;
         spear = false;
         bow = false;
         shield = false;
