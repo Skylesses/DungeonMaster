@@ -33,6 +33,5 @@ public class StoryManager : MonoBehaviour
             storySelection.SetActive(true);
             Debug.Log("you're god damn right");
         }
-
     }
 }

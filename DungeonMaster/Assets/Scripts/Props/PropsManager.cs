@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PropsManager : MonoBehaviour
 {
@@ -9,9 +10,13 @@ public class PropsManager : MonoBehaviour
     public GameObject jailProps;
     public GameObject woodsProps;
 
+    public GameObject nextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
+        nextLevel.SetActive(false);
+
         tavernProps.SetActive(false);
         shipProps.SetActive(false);
         jailProps.SetActive(false);
@@ -33,5 +38,32 @@ public class PropsManager : MonoBehaviour
         {
             woodsProps.SetActive(true);
         }
+    }  
+    
+    void Update()
+    {
+        //get all Instances of the script
+        DragNDrop[] allInstances = FindObjectsOfType<DragNDrop>();
+
+        //check if correctPos from DragNDropStories is true in all instances
+        bool oneLocked = false;
+        foreach (var instance in allInstances)
+        {
+            if (instance.isLocked)
+            {
+                oneLocked = true;
+            }
+        }
+        if(oneLocked)
+        {
+            //show story selection
+            nextLevel.SetActive(true);
+            Debug.Log("you're god damn right");
+        }
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("Level_3_DMScreen");
     }
 }

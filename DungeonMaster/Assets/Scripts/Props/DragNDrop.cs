@@ -15,7 +15,7 @@ public class DragNDrop : MonoBehaviour, IPointerClickHandler
 
     public float dropDistance;
     public bool isLocked;
-    
+
     //public GameObject otherObj;
     //private DragNDrop otherObjscript;
 
