@@ -45,23 +45,21 @@ public class PropsManager : MonoBehaviour
         //get all Instances of the script
         DragNDrop[] allInstances = FindObjectsOfType<DragNDrop>();
 
-        //check if correctPos from DragNDropStories is true in all instances
+        //check if isLocked from DragNDropStories is true in at least one instance
         bool oneLocked = false;
         foreach (var instance in allInstances)
         {
             if (instance.isLocked)
             {
                 oneLocked = true;
+                break;
             }
         }
-        if(oneLocked)
-        {
-            //show story selection
-            nextLevel.SetActive(true);
-            Debug.Log("you're god damn right");
-        }
+        //set nextLevel active
+        nextLevel.SetActive(oneLocked);
     }
 
+    //load next scene
     public void LoadNextScene()
     {
         SceneManager.LoadScene("Level_3_DMScreen");
