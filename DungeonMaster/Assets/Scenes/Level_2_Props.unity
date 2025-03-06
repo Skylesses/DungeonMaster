@@ -135,6 +135,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1302113900}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 914171706}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1328790301}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -215,26 +227,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 914171706}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (2)
@@ -423,6 +419,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78242836}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 770465537}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 258362709}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -503,26 +511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 770465537}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 258362709}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (7)
@@ -1113,6 +1105,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527514807}
     m_Modifications:
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 840978777}
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 172690160}
     - target: {fileID: 3441409159367635388, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: m_Name
       value: Shield (1)
@@ -1197,14 +1201,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.138
       objectReference: {fileID: 0}
-    - target: {fileID: 9177784029239499049, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 8610339191601269278, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 840978777}
-    - target: {fileID: 9177784029239499049, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 172690160}
+      objectReference: {fileID: 1997019376}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1340,6 +1340,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527514807}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 1864855758}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1483908087}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1420,26 +1432,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 1864855758}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1483908087}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 914171706}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (1)
@@ -1466,6 +1462,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931443962}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 520495822}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1170757545}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1546,26 +1554,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 520495822}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1170757545}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (5)
@@ -2069,10 +2061,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8648252746195690171, guid: 59fa1613f9deca743a05c181f6b4e259, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9146143258579399234, guid: 59fa1613f9deca743a05c181f6b4e259, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2196,10 +2184,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 41956916}
-  - {fileID: 1264966453}
   - {fileID: 1139361775}
   - {fileID: 532937530}
+  - {fileID: 41956916}
+  - {fileID: 1264966453}
   m_Father: {fileID: 1997019376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2261,6 +2249,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931443962}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 520495822}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1170757545}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2341,26 +2341,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 520495822}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1170757545}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (4)
@@ -2432,6 +2416,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78242836}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 770465537}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 258362709}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2512,26 +2508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 770465537}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 258362709}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (6)
@@ -2558,6 +2538,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527514807}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 1864855758}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1483908087}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2638,26 +2630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 1864855758}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1483908087}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword (3)
@@ -2806,6 +2782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spear (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2858857717139214756, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 3764477566941427905, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2886,26 +2866,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.size
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.data[0]
       value: 
       objectReference: {fileID: 1864855758}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.data[1]
       value: 
       objectReference: {fileID: 1483908087}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 1328790301}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3807,6 +3779,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1302113900}
     m_Modifications:
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 914171706}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 1328790301}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3887,18 +3871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 4981868359418311802, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 914171706}
-    - target: {fileID: 5176734318641133585, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 1328790301}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6487381173264927141, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Name
       value: Sword
@@ -3935,6 +3911,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spear
       objectReference: {fileID: 0}
+    - target: {fileID: 2858857717139214756, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 3764477566941427905, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4015,22 +3995,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.data[0]
       value: 
       objectReference: {fileID: 1864855758}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+    - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.data[1]
       value: 
       objectReference: {fileID: 1483908087}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 914171706}
-    - target: {fileID: 8329690690828474712, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 1328790301}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4044,6 +4020,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 527514807}
     m_Modifications:
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 840978777}
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 172690160}
     - target: {fileID: 3441409159367635388, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: m_Name
       value: Shield
@@ -4132,14 +4120,6 @@ PrefabInstance:
       propertyPath: canvasRect
       value: 
       objectReference: {fileID: 1997019376}
-    - target: {fileID: 9177784029239499049, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
-      value: 
-      objectReference: {fileID: 840978777}
-    - target: {fileID: 9177784029239499049, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 172690160}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4267,22 +4247,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 78242836}
     m_Modifications:
+    - target: {fileID: -5162214404369219008, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
+      propertyPath: dropPosArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -5162214404369219008, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
+      propertyPath: dropPosArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 770465537}
+    - target: {fileID: -5162214404369219008, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
+      propertyPath: dropPosArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 258362709}
     - target: {fileID: 1646842574108273887, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
       propertyPath: m_Name
       value: Club
       objectReference: {fileID: 0}
-    - target: {fileID: 5247979920902831231, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5247979920902831231, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
-      propertyPath: dropPosArray.Array.data[0]
+    - target: {fileID: 3724272397079125268, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 770465537}
-    - target: {fileID: 5247979920902831231, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
-      propertyPath: dropPosArray.Array.data[1]
-      value: 
-      objectReference: {fileID: 258362709}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 7532622176239969537, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4353635879345101115}
   - component: {fileID: 7014170549688493341}
   - component: {fileID: 3312619385635640834}
+  - component: {fileID: 161284532394935328}
   - component: {fileID: 7447176576334702296}
-  - component: {fileID: 5176734318641133585}
   - component: {fileID: 4981868359418311802}
   m_Layer: 0
   m_Name: Sword
@@ -78,6 +78,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &161284532394935328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487381173264927141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec1a5953172d93244a0b27e5c9300d20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropPosArray: []
+  dropDistance: 20
+  isLocked: 0
 --- !u!114 &7447176576334702296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,8 +110,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5176734318641133585}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 161284532394935328}
+          m_TargetAssemblyTypeName: DragNDropWeapons, Assembly-CSharp
           m_MethodName: DragObj
           m_Mode: 1
           m_Arguments:
@@ -111,8 +126,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5176734318641133585}
-          m_TargetAssemblyTypeName: DragNDrop, Assembly-CSharp
+        - m_Target: {fileID: 161284532394935328}
+          m_TargetAssemblyTypeName: DragNDropWeapons, Assembly-CSharp
           m_MethodName: DropObj
           m_Mode: 1
           m_Arguments:
@@ -123,25 +138,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &5176734318641133585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6487381173264927141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4f45c00d68056d41ade2cffadc358e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropPosArray:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  dropDistance: 20
-  isLocked: 0
 --- !u!114 &4981868359418311802
 MonoBehaviour:
   m_ObjectHideFlags: 0
