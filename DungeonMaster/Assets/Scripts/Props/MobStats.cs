@@ -11,8 +11,10 @@ public class MobStats : MonoBehaviour
     public static bool shield;
 
     //Drag N Drop script
-    public GameObject weapon;
-    public DragNDropWeapons dragScript;
+    public GameObject dropSpot;
+    public Transform dragObj;
+    public Transform dummy;
+    //public DragNDropWeapons dragScript;
 
     // Start is called before the first frame update
     void Start()
@@ -24,19 +26,20 @@ public class MobStats : MonoBehaviour
         shield = false;
 
         //get Drag N Drop script
-        weapon = this.gameObject;
-        dragScript = weapon.GetComponent<DragNDropWeapons>();
+        dropSpot = this.gameObject;
+        //dragScript = weapon.GetComponent<DragNDropWeapons>();
     }
 
     void Update()
     {
-        if(dragScript.isLocked == true)
+        if(dragObj == dummy && dropSpot.transform.childCount > 0)
         {
+            dragObj = dropSpot.transform.GetChild(0);
             AttachWeapon();
         }
-
-        if(dragScript.isLocked == false)
+        if(dragObj != dummy && dropSpot.transform.childCount == 0)
         {
+            
             DetachWeapon();
         }
     }
@@ -44,27 +47,27 @@ public class MobStats : MonoBehaviour
     //set bool depending on weapon type when weapon attached
     public void AttachWeapon()
     {
-        if(weapon.tag == "sword")
+        if(dragObj.tag == "sword")
         {
             sword = true;
             Debug.Log("Sword!");
         }
-        if (weapon.tag == "club")
+        if (dragObj.tag == "club")
         {
             club = true;
             Debug.Log("Club!");
         }
-        if (weapon.tag == "spear")
+        if (dragObj.tag == "spear")
         {
             spear = true;
             Debug.Log("Spear!");
         }
-        if (weapon.tag == "bow")
+        if (dragObj.tag == "bow")
         {
             bow = true;
             Debug.Log("Bow!");
         }
-        if (weapon.tag == "shield")
+        if (dragObj.tag == "shield")
         {
             shield = true;
             Debug.Log("Shield!");
@@ -74,30 +77,35 @@ public class MobStats : MonoBehaviour
     //set bool depending on weapon type when weapon detached
     public void DetachWeapon()
     {
-        if(weapon.tag == "sword")
+        if(dragObj.tag == "sword")
         {
             sword = false;
             Debug.Log("No sword!");
+            dragObj = dummy;
         }
-        if (weapon.tag == "club")
+        if (dragObj.tag == "club")
         {
             club = false;
             Debug.Log("No club!");
+            dragObj = dummy;
         }
-        if (weapon.tag == "spear")
+        if (dragObj.tag == "spear")
         {
             spear = false;
             Debug.Log("No spear!");
+            dragObj = dummy;
         }
-        if (weapon.tag == "bow")
+        if (dragObj.tag == "bow")
         {
             bow = false;
             Debug.Log("No bow!");
+            dragObj = dummy;
         }
-        if (weapon.tag == "shield")
+        if (dragObj.tag == "shield")
         {
             shield = false;
             Debug.Log("No shield!");
+            dragObj = dummy;
         }
     }
 }

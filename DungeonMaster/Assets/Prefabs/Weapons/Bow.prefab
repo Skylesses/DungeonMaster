@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -3362669692540223297}
   - component: {fileID: 3219986428547706957}
   - component: {fileID: 3580420299327193961}
-  - component: {fileID: 6742982852642607603}
   m_Layer: 0
   m_Name: Bow
   m_TagString: bow
@@ -152,17 +151,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasRect: {fileID: 0}
---- !u!114 &6742982852642607603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487932169469551446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea86295e04c6418448ee03d4cfeda068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 1487932169469551446}
-  dragScript: {fileID: 0}

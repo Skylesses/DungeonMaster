@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 8445765811944791629}
   - component: {fileID: 1254731955891181827}
   - component: {fileID: 4163817367590715735}
+  - component: {fileID: 5072595786023730642}
   m_Layer: 5
   m_Name: WeaponDropSpot
   m_TagString: Untagged
@@ -230,3 +231,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5072595786023730642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2486788085957472695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea86295e04c6418448ee03d4cfeda068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropSpot: {fileID: 0}
+  dragObj: {fileID: 0}
