@@ -19,6 +19,8 @@ public class DragNDrop : MonoBehaviour, IPointerClickHandler
     //public GameObject otherObj;
     //private DragNDrop otherObjscript;
 
+    //original position
+    private Transform originalParent;
     Vector3 objStartPos;
 
     private void Start()
@@ -26,6 +28,7 @@ public class DragNDrop : MonoBehaviour, IPointerClickHandler
         //set dragobj and starting position
         dragObj = this.gameObject;
         objStartPos = dragObj.transform.position;
+        originalParent = dragObj.transform.parent;
         isLocked = false;
 
         //otherObjscript = otherObj.GetComponent<DragNDrop>();
@@ -80,6 +83,7 @@ public class DragNDrop : MonoBehaviour, IPointerClickHandler
             isLocked = true;
             dragObj.transform.position = nearestDropPos.transform.position;
             occupiedDropSpots[nearestDropPos] = dragObj;
+            dragObj.transform.SetParent(nearestDropPos.transform);
         }
         //reset obj
         else
@@ -105,6 +109,7 @@ public class DragNDrop : MonoBehaviour, IPointerClickHandler
             if (isLocked && occupiedDropSpots.ContainsKey(nearestDropPos))
             {
                 occupiedDropSpots.Remove(nearestDropPos);
+                dragObj.transform.SetParent(originalParent);
             }
             dragObj.transform.position = objStartPos;
             isLocked = false;
