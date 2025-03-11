@@ -4,6 +4,23 @@ using UnityEngine;
 
 public class MobStats : MonoBehaviour
 {
+    //enemy types
+    public static bool skeleton;
+    public static bool spearSkeleton;
+    public static bool spearShieldSkeleton;
+    public static bool swordSkeleton;
+    public static bool swordShieldSkeleton;
+    public static bool goblin;
+    public static bool swordGoblin;
+    public static bool clubGoblin;
+    public static bool bandit;
+    public static bool swordBandit;
+    public static bool daggerBandit;
+    public static bool zombie;   
+    public static bool wyrmling;
+    public static bool spider;
+    public static bool ogre;
+
     public static bool sword;
     public static bool club;
     public static bool spear;
@@ -19,6 +36,22 @@ public class MobStats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        skeleton = false;
+        spearSkeleton = false;
+        spearShieldSkeleton = false;
+        swordSkeleton = false;
+        swordShieldSkeleton = false;
+        goblin = false;
+        swordGoblin = false;
+        clubGoblin = false;
+        bandit = false;
+        swordBandit = false;
+        daggerBandit = false;
+        zombie = false;
+        wyrmling = false;
+        spider = false;
+        ogre = false;
+
         sword = false;
         club = false;
         spear = false;

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7812698584343343496}
   - component: {fileID: 5421988411147716924}
   - component: {fileID: 2946279482901600817}
-  - component: {fileID: 6717540391956324963}
   m_Layer: 5
   m_Name: ShieldDropSpot
   m_TagString: Untagged
@@ -76,20 +75,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6717540391956324963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106346759362148440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea86295e04c6418448ee03d4cfeda068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropSpot: {fileID: 0}
-  dragObj: {fileID: 0}
 --- !u!1 &1629910008477309630
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +86,6 @@ GameObject:
   - component: {fileID: 5714598498148678229}
   - component: {fileID: 7964928129678560682}
   - component: {fileID: 3051765308938958893}
-  - component: {fileID: 165700578674885963}
   m_Layer: 5
   m_Name: WeaponDropSpot
   m_TagString: Untagged
@@ -166,20 +150,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &165700578674885963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629910008477309630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea86295e04c6418448ee03d4cfeda068, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropSpot: {fileID: 0}
-  dragObj: {fileID: 0}
 --- !u!1 &8697850405534033988
 GameObject:
   m_ObjectHideFlags: 0
