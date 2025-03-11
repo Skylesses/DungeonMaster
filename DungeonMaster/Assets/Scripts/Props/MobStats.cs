@@ -68,13 +68,28 @@ public class MobStats : MonoBehaviour
         if(dragObj == dummy && dropSpot.transform.childCount > 0)
         {
             dragObj = dropSpot.transform.GetChild(0);
-            AttachWeapon();
+            EnemyType();
         }
         if(dragObj != dummy && dropSpot.transform.childCount == 0)
         {
             
             DetachWeapon();
         }
+    }
+
+    //set bool depenind on enemy type
+    public void EnemyType()
+    {
+        if(dragObj.tag == "skeleton" && dragObj.transform.GetChild(0))
+        {
+
+        }
+    }
+
+    //set bool depending on enemy type removed
+    public void RemoveEnemy()
+    {
+
     }
 
     //set bool depending on weapon type when weapon attached
