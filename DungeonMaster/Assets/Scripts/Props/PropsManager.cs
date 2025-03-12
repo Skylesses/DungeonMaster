@@ -44,19 +44,27 @@ public class PropsManager : MonoBehaviour
     {
         //get all Instances of the script
         DragNDrop[] allInstances = FindObjectsOfType<DragNDrop>();
+        DragNDropWeapons[] allInstancesWeapons = FindObjectsOfType<DragNDropWeapons>();
 
-        //check if isLocked from DragNDropStories is true in at least one instance
-        bool oneLocked = false;
+        //check if isLocked from DragNDrop and DragNDropWeapons is true in all instances
+        bool allPropsLocked = true;
+        bool allWeaponsLocked = true;
         foreach (var instance in allInstances)
         {
-            if (instance.isLocked)
+            if (!instance.isLocked)
             {
-                oneLocked = true;
-                break;
+                allPropsLocked = false;
+            }
+        }
+        foreach (var instance in allInstancesWeapons)
+        {
+            if (!instance.isLocked)
+            {
+                allWeaponsLocked = false;
             }
         }
         //set nextLevel active
-        nextLevel.SetActive(oneLocked);
+        nextLevel.SetActive(allPropsLocked && allWeaponsLocked);
     }
 
     //load next scene
