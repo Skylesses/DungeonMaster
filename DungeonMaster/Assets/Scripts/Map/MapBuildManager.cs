@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Tilemaps;
+using UnityEngine.SceneManagement;
 
 public class MapBuildManager : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class MapBuildManager : MonoBehaviour
     public int selectedTile = 0;
 
     public Transform tileGridUI;
+
+    public GameObject nextLevel;
+
 
     private void Start()
     {
@@ -41,10 +45,16 @@ public class MapBuildManager : MonoBehaviour
 
             i++;
         }
+
+        nextLevel.SetActive(false);
+
+        int tileCount = CountTiles();
+        Debug.Log("" + tileCount);
     }
 
     private void Update()
-    {   //select tile
+    {   
+        //select tile
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             selectedTile = 0;
@@ -99,15 +109,30 @@ public class MapBuildManager : MonoBehaviour
         //place tile
         if (Input.GetMouseButton(0))
         {
-            Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(position), tiles[selectedTile]);
+            PlaceTile();
         }
         //delete tile
         if (Input.GetMouseButton(1))
         {
-            Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            tilemap.SetTile(tilemap.WorldToCell(position), null);
+            DeleteTile();
         }
+    }
+    void PlaceTile()
+    {
+        Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3Int cellPos = tilemap.WorldToCell(position);
+        tilemap.SetTile(cellPos, tiles[selectedTile]);
+
+        CheckIfFull();
+    }
+
+    void DeleteTile()
+    {
+        Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3Int cellPos = tilemap.WorldToCell(position);
+        tilemap.SetTile(cellPos, null);
+
+        CheckIfFull();
     }
 
     //select tile out of selection
@@ -129,6 +154,53 @@ public class MapBuildManager : MonoBehaviour
 
             i++; 
         }
+    }
+
+    //tilemap full?
+    void CheckIfFull()
+    {
+        Debug.Log("check");
+        if (CountTiles() >= 180)
+        {
+            Debug.Log("isFull");
+            nextLevel.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("notFull");
+            nextLevel.SetActive(false);
+        }
+    }
+
+    //check tile count
+    int CountTiles()
+    {
+        int count = 0;
+
+        Vector3Int minBounds = tilemap.cellBounds.min;
+        Vector3Int maxBounds = tilemap.cellBounds.max;
+
+        // Loop through grid cells
+        for (int x = minBounds.x; x < maxBounds.x; x++)
+        {
+            for (int y = minBounds.y; y < maxBounds.y; y++)
+            {
+                Vector3Int cellPos = new Vector3Int(x, y, 0);
+
+                //cell position not null?
+                if (tilemap.GetTile(cellPos) != null)
+                {
+                    count++;
+                }
+            }
+        }
+        return count;        
+    }
+
+    //load next scene
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("Ending");
     }
 }
 
