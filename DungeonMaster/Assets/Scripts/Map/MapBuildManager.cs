@@ -19,6 +19,7 @@ public class MapBuildManager : MonoBehaviour
 
     public GameObject nextLevel;
 
+    Vector3 mousePos;
 
     private void Start()
     {
@@ -116,7 +117,17 @@ public class MapBuildManager : MonoBehaviour
         {
             DeleteTile();
         }
+
+        mousePos = Input.mousePosition;
+
+        mousePos.x = Mathf.Clamp(mousePos.x, 0, Screen.width);
+        mousePos.y = Mathf.Clamp(mousePos.y, 0, Screen.height);
+
+        Cursor.SetCursor(null, new Vector2(mousePos.x, mousePos.y), CursorMode.Auto);
+
     }
+
+    //place tile on mouse position
     void PlaceTile()
     {
         Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -126,6 +137,7 @@ public class MapBuildManager : MonoBehaviour
         CheckIfFull();
     }
 
+    //delete tile
     void DeleteTile()
     {
         Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -177,6 +189,7 @@ public class MapBuildManager : MonoBehaviour
     {
         int count = 0;
 
+        //min max positions of grid
         Vector3Int minBounds = tilemap.cellBounds.min;
         Vector3Int maxBounds = tilemap.cellBounds.max;
 
@@ -187,13 +200,14 @@ public class MapBuildManager : MonoBehaviour
             {
                 Vector3Int cellPos = new Vector3Int(x, y, 0);
 
-                //cell position not null?
+                //tile in cell?
                 if (tilemap.GetTile(cellPos) != null)
                 {
                     count++;
                 }
             }
         }
+        Debug.Log("tile count" + count);
         return count;        
     }
 
