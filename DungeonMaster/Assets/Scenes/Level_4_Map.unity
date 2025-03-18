@@ -394,6 +394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 9197547580710187533, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -489,7 +493,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1231977086
 RectTransform:
@@ -859,6 +863,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1915782801}
   - {fileID: 1806891080}
-  - {fileID: 1823491558}
   - {fileID: 1231977086}
+  - {fileID: 1823491558}
   - {fileID: 516827233}
