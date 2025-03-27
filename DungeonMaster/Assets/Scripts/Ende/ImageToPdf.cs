@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
+//using iTextSharp.text;
+//using iTextSharp.text.pdf;
 
 public class ImageToPdf : MonoBehaviour
 {
-    public void SaveAsPDF()
+    /*public void SaveAsPDF()
     {
         string imgPath = Application.persistentDataPath + "/CanvasImage.png";
         string pdfPath = Application.persistentDataPath + "/CanvasOutput.pdf";
@@ -23,5 +23,5 @@ public class ImageToPdf : MonoBehaviour
         document.Close();
 
         Debug.Log("PDF saved at: " + pdfPath);
-    }
+    }*/
 }
