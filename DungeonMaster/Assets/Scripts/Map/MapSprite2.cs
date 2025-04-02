@@ -12,7 +12,7 @@ public class MapSprite2 : MonoBehaviour
 
     public static class GlobalSpriteStorage2
     {
-        public static Sprite savedSprite;
+        public static Sprite savedSprite2;
     }
 
     public void SaveTilemapAsSprite2()
@@ -32,9 +32,10 @@ public class MapSprite2 : MonoBehaviour
         RenderTexture.active = null;
 
         //convert Texture2D to Sprite
-        Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+        Sprite newSprite2 = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 
         //store sprite for later
-        GlobalSpriteStorage2.savedSprite = newSprite;
+        GlobalSpriteStorage2.savedSprite2 = newSprite2;
+        Debug.Log("savedMap2");
     }
 }

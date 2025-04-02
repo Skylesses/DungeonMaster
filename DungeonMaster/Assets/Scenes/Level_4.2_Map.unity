@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 477365308}
   - component: {fileID: 477365307}
-  - component: {fileID: 477365306}
+  - component: {fileID: 477365309}
   m_Layer: 0
   m_Name: MapBuildManagerWoods
   m_TagString: Untagged
@@ -140,20 +140,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &477365306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 477365305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1370879395}
-  renderCamera: {fileID: 1681848970}
 --- !u!114 &477365307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +183,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &477365309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477365305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926a1602ef219aa46978b2eafb9774b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
 --- !u!1 &516827230
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +468,7 @@ PrefabInstance:
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1806891082}
+      objectReference: {fileID: 1806891081}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -479,7 +479,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SaveTilemapAsSprite
+      value: SaveTilemapAsSprite2
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -487,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: MapSprite, Assembly-CSharp
+      value: MapSprite2, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -652,7 +652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1328265222}
   - component: {fileID: 1328265221}
-  - component: {fileID: 1328265220}
+  - component: {fileID: 1328265223}
   m_Layer: 0
   m_Name: MapBuildManagerJail
   m_TagString: Untagged
@@ -660,20 +660,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1328265220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328265219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1370879395}
-  renderCamera: {fileID: 1681848970}
 --- !u!114 &1328265221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -717,6 +703,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328265223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328265219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926a1602ef219aa46978b2eafb9774b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
 --- !u!1 &1370879392
 GameObject:
   m_ObjectHideFlags: 0
@@ -871,7 +871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1435475686}
   - component: {fileID: 1435475685}
-  - component: {fileID: 1435475684}
+  - component: {fileID: 1435475687}
   m_Layer: 0
   m_Name: MapBuildManagerShip
   m_TagString: Untagged
@@ -879,20 +879,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1435475684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435475683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemap: {fileID: 1370879395}
-  renderCamera: {fileID: 1681848970}
 --- !u!114 &1435475685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -936,6 +922,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1435475687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435475683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 926a1602ef219aa46978b2eafb9774b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
 --- !u!1 &1666127025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,7 +1162,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1806891080}
   - component: {fileID: 1806891079}
-  - component: {fileID: 1806891082}
+  - component: {fileID: 1806891081}
   m_Layer: 0
   m_Name: MapBuildManagerTavern
   m_TagString: Untagged
@@ -1213,7 +1213,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806891082
+--- !u!114 &1806891081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1806891078}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
+  m_Script: {fileID: 11500000, guid: 926a1602ef219aa46978b2eafb9774b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1370879395}

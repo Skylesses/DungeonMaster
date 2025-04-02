@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class GetTilemapSprite2 : MonoBehaviour
 {
-    public Image map;
+    public Image map2;
 
     private void Start()
     {
         //get sprite from tilemap in Map Scene
-        if(MapSprite2.GlobalSpriteStorage2.savedSprite != null)
+        if(MapSprite2.GlobalSpriteStorage2.savedSprite2 != null)
         {
-            map.sprite = MapSprite.GlobalSpriteStorage.savedSprite;
+            map2.sprite = MapSprite2.GlobalSpriteStorage2.savedSprite2;
         }
     }
 }

@@ -36,5 +36,6 @@ public class MapSprite : MonoBehaviour
 
         //store sprite for later
         GlobalSpriteStorage.savedSprite = newSprite;
+        Debug.Log("savedMap1");
     }
 }
