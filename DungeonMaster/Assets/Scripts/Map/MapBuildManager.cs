@@ -210,11 +210,5 @@ public class MapBuildManager : MonoBehaviour
         Debug.Log("tile count" + count);
         return count;        
     }
-
-    //load next scene
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene("Ending");
-    }
 }
 

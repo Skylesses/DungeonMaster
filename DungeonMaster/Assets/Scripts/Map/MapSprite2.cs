@@ -5,17 +5,17 @@ using UnityEngine.Tilemaps;
 using System.IO;
 using UnityEngine.SceneManagement;
 
-public class MapSprite : MonoBehaviour
+public class MapSprite2 : MonoBehaviour
 {
     public Tilemap tilemap;
     public Camera renderCamera;
 
-    public static class GlobalSpriteStorage
+    public static class GlobalSpriteStorage2
     {
         public static Sprite savedSprite;
     }
 
-    public void SaveTilemapAsSprite()
+    public void SaveTilemapAsSprite2()
     {
         //set up the RenderTexture
         int width = Screen.width;
@@ -35,6 +35,6 @@ public class MapSprite : MonoBehaviour
         Sprite newSprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
 
         //store sprite for later
-        GlobalSpriteStorage.savedSprite = newSprite;
+        GlobalSpriteStorage2.savedSprite = newSprite;
     }
 }

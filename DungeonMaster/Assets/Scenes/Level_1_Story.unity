@@ -1638,7 +1638,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1655325163}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &217987101
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 740591864}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &254818514
@@ -3790,7 +3790,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1495624917}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &590320460
@@ -6384,7 +6384,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1217020283}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &976620308
@@ -6879,7 +6879,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1546474310}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1016960609
@@ -7616,7 +7616,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1110483770}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1139355046
@@ -8275,7 +8275,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1247813580}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1195873147
@@ -9065,7 +9065,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1151655213}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1245019371
@@ -10800,7 +10800,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1405585267}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1375201386
@@ -11308,7 +11308,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 484328594}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1460496359
@@ -11554,7 +11554,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 429092024}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1502132382
@@ -11910,7 +11910,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1949396825}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1542897693
@@ -12495,7 +12495,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 506076483}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &1570665610
@@ -14877,7 +14877,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 1908011032}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &2002504356
@@ -15487,7 +15487,7 @@ MonoBehaviour:
   - {fileID: 1217020283}
   - {fileID: 1247813580}
   rightPos: {fileID: 50882408}
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
   correctPos: 0
 --- !u!114 &2072867286
@@ -16074,6 +16074,10 @@ PrefabInstance:
       propertyPath: rightPos
       value: 
       objectReference: {fileID: 937383110}
+    - target: {fileID: 7044402084956684294, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: dropDistance
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7044402084956684294, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: dropPosArray.Array.data[0]
       value: 

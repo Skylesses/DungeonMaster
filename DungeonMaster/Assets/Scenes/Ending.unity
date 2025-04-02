@@ -233,6 +233,7 @@ RectTransform:
   m_Children:
   - {fileID: 355964015}
   - {fileID: 1608852094}
+  - {fileID: 533996780}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -275,7 +276,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -271}
+  m_AnchoredPosition: {x: 728, y: -35}
   m_SizeDelta: {x: 419.6112, y: 419.6112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &355964016
@@ -436,6 +437,95 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &533996779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 533996780}
+  - component: {fileID: 533996783}
+  - component: {fileID: 533996782}
+  - component: {fileID: 533996781}
+  m_Layer: 5
+  m_Name: Map2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &533996780
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533996779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 70603516}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 11, y: -270}
+  m_SizeDelta: {x: 960, y: 540}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &533996781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533996779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb45a7e97ee44de45b5f3b17862092eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  map: {fileID: 533996782}
+--- !u!114 &533996782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533996779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &533996783
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533996779}
+  m_CullTransparentMesh: 1
 --- !u!1 &925181333
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1511516000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,7 +836,7 @@ GameObject:
   - component: {fileID: 1608852096}
   - component: {fileID: 1608852095}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Map1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -768,7 +858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11, y: 243}
+  m_AnchoredPosition: {x: 11, y: 270}
   m_SizeDelta: {x: 960, y: 540}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1608852095
@@ -783,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb45a7e97ee44de45b5f3b17862092eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1608852096}
+  map: {fileID: 1608852096}
 --- !u!114 &1608852096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,7 +1000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb45a7e97ee44de45b5f3b17862092eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  image: {fileID: 1724383194}
+  map: {fileID: 0}
 --- !u!1 &1850453343
 GameObject:
   m_ObjectHideFlags: 0

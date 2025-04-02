@@ -122,6 +122,81 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &477365305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477365308}
+  - component: {fileID: 477365307}
+  - component: {fileID: 477365306}
+  m_Layer: 0
+  m_Name: MapBuildManagerWoods
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &477365306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477365305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
+--- !u!114 &477365307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477365305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea8e668399dfb4d985453d1f70a3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  tiles:
+  - {fileID: 11400000, guid: a5039ed090fb19142b419f973af3c588, type: 2}
+  - {fileID: 11400000, guid: 0d7bfe3a60798d74fa4611c68ff64b5c, type: 2}
+  - {fileID: 11400000, guid: 501dcc563511ac14f8c1d6db3622c7d9, type: 2}
+  - {fileID: 11400000, guid: d0ff0dc40acbb62438036f8d014f293c, type: 2}
+  - {fileID: 11400000, guid: d72cdfbc31c020048bc39c67b5ac3532, type: 2}
+  - {fileID: 11400000, guid: ba6eeb5976b6b574b8c18b78a7de4d28, type: 2}
+  - {fileID: 11400000, guid: d96bec08413d9844c87fea5ba158b279, type: 2}
+  - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
+  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
+  - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
+  UITiles: []
+  selectedTile: 0
+  tileGridUI: {fileID: 930866548}
+  nextLevel: {fileID: 1090005942}
+--- !u!4 &477365308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477365305}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &516827230
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1806891079}
+      objectReference: {fileID: 1231977087}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -408,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MapBuildManager, Assembly-CSharp
+      value: TilesManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -457,6 +532,7 @@ GameObject:
   - component: {fileID: 1231977085}
   - component: {fileID: 1231977084}
   - component: {fileID: 1231977083}
+  - component: {fileID: 1231977087}
   m_Layer: 5
   m_Name: MapTilesCanvas
   m_TagString: Untagged
@@ -549,6 +625,98 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1231977087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231977082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf5f284792812e243b6a52ea0e1f4e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tavernTiles: {fileID: 1806891078}
+  shipTiles: {fileID: 1435475683}
+  jailTiles: {fileID: 1328265219}
+  woodsTiles: {fileID: 477365305}
+  nextLevel: Ending
+--- !u!1 &1328265219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328265222}
+  - component: {fileID: 1328265221}
+  - component: {fileID: 1328265220}
+  m_Layer: 0
+  m_Name: MapBuildManagerJail
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1328265220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328265219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
+--- !u!114 &1328265221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328265219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea8e668399dfb4d985453d1f70a3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  tiles:
+  - {fileID: 11400000, guid: d72cdfbc31c020048bc39c67b5ac3532, type: 2}
+  - {fileID: 11400000, guid: 0d7bfe3a60798d74fa4611c68ff64b5c, type: 2}
+  - {fileID: 11400000, guid: 501dcc563511ac14f8c1d6db3622c7d9, type: 2}
+  - {fileID: 11400000, guid: d0ff0dc40acbb62438036f8d014f293c, type: 2}
+  - {fileID: 11400000, guid: ba6eeb5976b6b574b8c18b78a7de4d28, type: 2}
+  - {fileID: 11400000, guid: d96bec08413d9844c87fea5ba158b279, type: 2}
+  - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
+  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
+  - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
+  - {fileID: 11400000, guid: a5039ed090fb19142b419f973af3c588, type: 2}
+  UITiles: []
+  selectedTile: 0
+  tileGridUI: {fileID: 930866548}
+  nextLevel: {fileID: 1090005942}
+--- !u!4 &1328265222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328265219}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1370879392
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,6 +861,81 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1435475683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435475686}
+  - component: {fileID: 1435475685}
+  - component: {fileID: 1435475684}
+  m_Layer: 0
+  m_Name: MapBuildManagerShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1435475684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435475683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9435f2dbbea1ba4fa5a909f2d1a2c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  renderCamera: {fileID: 1681848970}
+--- !u!114 &1435475685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435475683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2ea8e668399dfb4d985453d1f70a3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tilemap: {fileID: 1370879395}
+  tiles:
+  - {fileID: 11400000, guid: d0ff0dc40acbb62438036f8d014f293c, type: 2}
+  - {fileID: 11400000, guid: 0d7bfe3a60798d74fa4611c68ff64b5c, type: 2}
+  - {fileID: 11400000, guid: 501dcc563511ac14f8c1d6db3622c7d9, type: 2}
+  - {fileID: 11400000, guid: d72cdfbc31c020048bc39c67b5ac3532, type: 2}
+  - {fileID: 11400000, guid: ba6eeb5976b6b574b8c18b78a7de4d28, type: 2}
+  - {fileID: 11400000, guid: d96bec08413d9844c87fea5ba158b279, type: 2}
+  - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
+  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
+  - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
+  - {fileID: 11400000, guid: a5039ed090fb19142b419f973af3c588, type: 2}
+  UITiles: []
+  selectedTile: 0
+  tileGridUI: {fileID: 930866548}
+  nextLevel: {fileID: 1090005942}
+--- !u!4 &1435475686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435475683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1666127025
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,10 +1162,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1806891080}
   - component: {fileID: 1806891079}
-  - component: {fileID: 1806891081}
   - component: {fileID: 1806891082}
   m_Layer: 0
-  m_Name: MapBuildManager
+  m_Name: MapBuildManagerTavern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -942,6 +1184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1370879395}
   tiles:
+  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
   - {fileID: 11400000, guid: 0d7bfe3a60798d74fa4611c68ff64b5c, type: 2}
   - {fileID: 11400000, guid: 501dcc563511ac14f8c1d6db3622c7d9, type: 2}
   - {fileID: 11400000, guid: d0ff0dc40acbb62438036f8d014f293c, type: 2}
@@ -949,7 +1192,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ba6eeb5976b6b574b8c18b78a7de4d28, type: 2}
   - {fileID: 11400000, guid: d96bec08413d9844c87fea5ba158b279, type: 2}
   - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
-  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
   - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
   - {fileID: 11400000, guid: a5039ed090fb19142b419f973af3c588, type: 2}
   UITiles: []
@@ -971,23 +1213,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1806891081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806891078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c68cef6b99fafb0469790741b108a731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tilemapCamera: {fileID: 1681848970}
-  tilemap: {fileID: 1370879395}
-  imageWidth: 0
-  imageHeight: 0
-  spriteRenderer: {fileID: 1666127027}
 --- !u!114 &1806891082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,6 +1416,9 @@ SceneRoots:
   - {fileID: 1915782801}
   - {fileID: 1681848971}
   - {fileID: 1806891080}
+  - {fileID: 1435475686}
+  - {fileID: 1328265222}
+  - {fileID: 477365308}
   - {fileID: 1231977086}
   - {fileID: 1823491558}
   - {fileID: 516827233}
