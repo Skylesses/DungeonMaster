@@ -54,9 +54,9 @@ public class MapBuildManager : MonoBehaviour
     }
 
     private void Update()
-    {   
+    {
         //select tile
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        /*if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             selectedTile = 0;
             RenderUITiles();
@@ -104,6 +104,19 @@ public class MapBuildManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             selectedTile = 9;
+            RenderUITiles();
+        }*/
+
+        //select tile
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (scroll > 0f)
+        {
+            selectedTile = (selectedTile + 1) % tiles.Length;
+            RenderUITiles();
+        }
+        else if (scroll < 0f)
+        {
+            selectedTile = (selectedTile - 1 + tiles.Length) % tiles.Length;
             RenderUITiles();
         }
 
