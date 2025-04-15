@@ -257,7 +257,6 @@ GameObject:
   m_Component:
   - component: {fileID: 770170065}
   - component: {fileID: 770170064}
-  - component: {fileID: 770170063}
   - component: {fileID: 770170062}
   - component: {fileID: 770170067}
   - component: {fileID: 770170066}
@@ -330,30 +329,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &770170063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770170061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bef07b9c06a65341a7a14cfac4442bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dice:
-  - {fileID: 8575382223391006902, guid: 5f3a75af91109ab4783c80ad45b61f00, type: 3}
-  - {fileID: 6315030358446932684, guid: 84ba041996444e241a891a345b3884bc, type: 3}
-  - {fileID: 1442888612658847127, guid: b3be3e2c1ab56b74d90a9df6e834f089, type: 3}
-  - {fileID: 7790429321270002417, guid: 596add760914a034b84b424d285cda2c, type: 3}
-  - {fileID: 1058552575905855535, guid: 6c161b39fd48cbd4492c448ff03711e1, type: 3}
-  - {fileID: 5398949939399887095, guid: bd4ee68b0bb05ef42b39e183256748d3, type: 3}
-  - {fileID: 8946529552107138523, guid: a37ce6505ebd9734e851658d54655ed5, type: 3}
-  - {fileID: 5888211428988400196, guid: a62b89f1625de8a42ac3cc6a4116534a, type: 3}
-  startDelay: 2
-  spawnInterval: 20
-  canvas: {fileID: 1236017501}
 --- !u!212 &770170064
 SpriteRenderer:
   m_ObjectHideFlags: 0

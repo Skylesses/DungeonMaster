@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3865383712018187395}
   - component: {fileID: -7334732362483052142}
   - component: {fileID: -5974683883331671831}
-  - component: {fileID: 5871199119551529592}
+  - component: {fileID: -4520301195672404346}
   m_Layer: 0
   m_Name: Dice_7
   m_TagString: Untagged
@@ -168,7 +168,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5871199119551529592
+--- !u!114 &-4520301195672404346
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,11 +177,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1211368716289148464}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3da4b9cb96d775d479a47bfe7622e8f9, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a70e2e832e1b094ba27b4abb9756f9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dragObj: {fileID: 1211368716289148464}
   dropDistance: 0
   mouseDown: 0
-  dice: []
-  spawnInterval: 2
