@@ -11,6 +11,7 @@ TagManager:
   - bow
   - shield
   - club
+  - dice
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -6686547544558906765}
   m_Layer: 0
   m_Name: Dice_2
-  m_TagString: Untagged
+  m_TagString: dice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,5 +178,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragObj: {fileID: 2723993727645495058}
-  dropDistance: 0
   mouseDown: 0

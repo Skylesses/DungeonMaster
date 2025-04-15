@@ -6,12 +6,12 @@ public class DicebagController : MonoBehaviour
 {
     //obj's for dragging and dropping
     public GameObject dragObj;
-    public float dropDistance;
 
     public bool mouseDown;
 
     private Vector3 mousePos;
 
+    //dice for spawning
     public GameObject[] dice;
     public float spawnInterval = 2;
 
@@ -21,7 +21,7 @@ public class DicebagController : MonoBehaviour
     Vector3 objStartPos;
 
     private void Start()
-    {
+    {   //starting position
         objStartPos = dragObj.transform.position;
     }
 
@@ -35,7 +35,7 @@ public class DicebagController : MonoBehaviour
         mousePos = Input.mousePosition - GetMousePos();
         mouseDown = true;
     }
-    //move with mouse drag
+    //move with mouse drag and start SpawnDice
     private void OnMouseDrag()
     {
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition - mousePos);
@@ -49,7 +49,7 @@ public class DicebagController : MonoBehaviour
     private void OnMouseUp()
     {
         mouseDown = false;
-
+        //stop SpawnDice
         if(spawnCoroutine != null)
         {
             StopCoroutine(SpawnDice());
