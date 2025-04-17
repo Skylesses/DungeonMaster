@@ -5,16 +5,20 @@ using TMPro;
 
 public class StoryInput : MonoBehaviour
 {
+    //input ID
+    [SerializeField] private string fieldID;
+
     [SerializeField] private string inputText;
 
     [SerializeField] private GameObject reactionGroup;
     [SerializeField] private TMP_Text reactionTextBox;
 
-    //Get Text from input
+    //Get text from input
     public void GrabFromInput(string input)
     {
         inputText = input;
         DisplayReactionToInput();
+        SaveInput();
     }
 
     private void DisplayReactionToInput()
@@ -23,8 +27,15 @@ public class StoryInput : MonoBehaviour
         reactionGroup.SetActive(true);
     }
 
-    public void HandOverInput()
+    //save text from input
+    public void SaveInput()
     {
+        PlayerPrefs.SetString(fieldID, inputText);
+        PlayerPrefs.Save();
+    }
 
+    public string GetInput()
+    {
+        return inputText;
     }
 }
