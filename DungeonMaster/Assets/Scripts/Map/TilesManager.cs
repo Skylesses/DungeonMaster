@@ -15,10 +15,10 @@ public class TilesManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        tavernTiles.SetActive(false);
+        /*tavernTiles.SetActive(false);
         shipTiles.SetActive(false);
         jailTiles.SetActive(false);
-        woodsTiles.SetActive(false);
+        woodsTiles.SetActive(false);*/
 
         if (StorySelection.tavern == true)
         {
