@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 5714598498148678229}
   - component: {fileID: 7964928129678560682}
   - component: {fileID: 3051765308938958893}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: WeaponDropSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,8 +183,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5714598498148678229}
   - {fileID: 7812698584343343496}
+  - {fileID: 5714598498148678229}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
