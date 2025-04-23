@@ -185,7 +185,7 @@ public class MapBuildManager : MonoBehaviour
     void CheckIfFull()
     {
         Debug.Log("check");
-        if (CountTiles() >= 180)
+        if (CountTiles() >= 72)
         {
             Debug.Log("isFull");
             nextLevel.SetActive(true);
