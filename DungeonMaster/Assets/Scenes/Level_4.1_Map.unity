@@ -757,7 +757,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 100}
+  m_SizeDelta: {x: 2000, y: 100}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &930866549
 MonoBehaviour:
@@ -780,7 +780,7 @@ MonoBehaviour:
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 80, y: 80}
-  m_Spacing: {x: 20, y: 20}
+  m_Spacing: {x: 11, y: 11}
   m_Constraint: 0
   m_ConstraintCount: 2
 --- !u!114 &930866550
@@ -1652,6 +1652,17 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
   - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
   - {fileID: 11400000, guid: a5039ed090fb19142b419f973af3c588, type: 2}
+  - {fileID: 11400000, guid: e3db72a8e2527d143bfa7d3f0c26c848, type: 2}
+  - {fileID: 11400000, guid: 26456885209eb594680bec04bdaa458b, type: 2}
+  - {fileID: 11400000, guid: 0d7bfe3a60798d74fa4611c68ff64b5c, type: 2}
+  - {fileID: 11400000, guid: 501dcc563511ac14f8c1d6db3622c7d9, type: 2}
+  - {fileID: 11400000, guid: d0ff0dc40acbb62438036f8d014f293c, type: 2}
+  - {fileID: 11400000, guid: d72cdfbc31c020048bc39c67b5ac3532, type: 2}
+  - {fileID: 11400000, guid: ba6eeb5976b6b574b8c18b78a7de4d28, type: 2}
+  - {fileID: 11400000, guid: d96bec08413d9844c87fea5ba158b279, type: 2}
+  - {fileID: 11400000, guid: 35bdf9a955610cb42bcb3011d2a4075d, type: 2}
+  - {fileID: 11400000, guid: 32c833bde133aca44aa87b05affaa773, type: 2}
+  - {fileID: 11400000, guid: bdafa51a13ed78a4eb4019da3d21a86a, type: 2}
   UITiles: []
   selectedTile: 0
   tileGridUI: {fileID: 930866548}
