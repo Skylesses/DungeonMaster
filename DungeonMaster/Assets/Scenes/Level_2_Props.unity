@@ -1580,6 +1580,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7535645636455236891, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
   m_PrefabInstance: {fileID: 878648275}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &904388405 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7924201390199105356, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
+  m_PrefabInstance: {fileID: 642890067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &914171706 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9198818213434122590, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
@@ -2235,7 +2240,7 @@ PrefabInstance:
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 904388405}
     - target: {fileID: 4353635879345101115, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3931,6 +3936,10 @@ PrefabInstance:
     - target: {fileID: 3764477566941427905, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3764477566941427905, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.size
