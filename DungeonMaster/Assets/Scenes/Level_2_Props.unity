@@ -3571,30 +3571,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1302113900}
     m_Modifications:
-    - target: {fileID: 492747458031952837, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.74939305
-      objectReference: {fileID: 0}
-    - target: {fileID: 492747458031952837, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.6621254
-      objectReference: {fileID: 0}
-    - target: {fileID: 492747458031952837, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 8.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 492747458031952837, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 492747458031952837, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -82.924
-      objectReference: {fileID: 0}
-    - target: {fileID: 3078390695010977684, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_RaycastPadding.z
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3870601429496093042, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
       propertyPath: dropPosArray.Array.data[0]
       value: 
@@ -3607,14 +3583,6 @@ PrefabInstance:
       propertyPath: dropPosArray.Array.data[2]
       value: 
       objectReference: {fileID: 917931221}
-    - target: {fileID: 6255892520976849661, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 18.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6255892520976849661, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 17.1
-      objectReference: {fileID: 0}
     - target: {fileID: 6580434283180008219, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
       propertyPath: m_Name
       value: Guard
