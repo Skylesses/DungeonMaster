@@ -17,15 +17,15 @@ public class StoryInput : MonoBehaviour
     public void GrabFromInput(string input)
     {
         inputText = input;
-        DisplayReactionToInput();
+        //DisplayReactionToInput();
         SaveInput();
     }
 
-    private void DisplayReactionToInput()
+    /*private void DisplayReactionToInput()
     {
         reactionTextBox.text = "You meet in a" + inputText + ".";
         reactionGroup.SetActive(true);
-    }
+    }*/
 
     //save text from input
     public void SaveInput()

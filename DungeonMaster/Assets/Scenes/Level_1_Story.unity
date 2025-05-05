@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000036478, y: -2.1}
+  m_AnchoredPosition: {x: 0.000036478, y: -46.5}
   m_SizeDelta: {x: 140, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &9086190
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -882,7 +882,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 863953828}
   m_Father: {fileID: 1460496353}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -910,12 +911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    The forest
-
-
-    is quiet...'
+  m_text: "\nOut ouf the bushes a girl named \n\n\nruns to you"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -1127,9 +1123,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    You see something on the ground:'
+  m_text: "\nOn your way out you meet \n\n\n,a rebel leader"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -1243,7 +1237,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -28.5}
+  m_AnchoredPosition: {x: 0, y: -44.1}
   m_SizeDelta: {x: 140, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &178880631
@@ -1320,7 +1314,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -1444,7 +1438,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -2.6, y: -33.2}
+  m_AnchoredPosition: {x: -5, y: -25.4}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &201702710
@@ -2399,9 +2393,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
+  m_text: 'The mutiny seems to be lead by
 
-    Suddenly they'
+
+
+    the quarter-master'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -3356,7 +3352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -42.51042}
+  m_AnchoredPosition: {x: 0, y: -24}
   m_SizeDelta: {x: 140, y: 66.4208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &557698771
@@ -3433,7 +3429,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -4590,7 +4586,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -89.6, y: -127.8}
+  m_AnchoredPosition: {x: -55, y: -121.8}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &760345647
@@ -4691,12 +4687,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    It''s a
-
-
-
-
-    Night/Day...'
+    You walk through the woods of'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -4854,8 +4845,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 863953828}
+  m_Children: []
   m_Father: {fileID: 1502132376}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -4883,7 +4873,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nThe silence \n\nis broken by"
+  m_text: '
+
+    Shortly after you hear screams close to you'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -4994,7 +4986,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -38.999985, y: -97.01664}
+  m_AnchoredPosition: {x: -14.6, y: -92}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &813254631
@@ -5317,11 +5309,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1213797872}
-  m_Father: {fileID: 794829260}
+  m_Father: {fileID: 132011884}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -40}
+  m_AnchoredPosition: {x: 0, y: -41.66666}
   m_SizeDelta: {x: 140, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &863953829
@@ -5336,7 +5328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5154976550f0e4c8295fcf8da923e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fieldID: Woods3
+  fieldID: Woods2
   inputText: 
   reactionGroup: {fileID: 80471213}
   reactionTextBox: {fileID: 980733635}
@@ -5398,7 +5390,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -5938,7 +5930,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -94, y: -9.1}
+  m_AnchoredPosition: {x: -92.4, y: -8.3}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &928955364
@@ -7069,8 +7061,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -19.372082}
-  m_SizeDelta: {x: 140, y: 64.7442}
+  m_AnchoredPosition: {x: 17.45, y: -28.5}
+  m_SizeDelta: {x: 105.1, y: 38.5376}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1083712078
 MonoBehaviour:
@@ -7146,7 +7138,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -7747,7 +7739,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -106, y: -8}
+  m_AnchoredPosition: {x: -33.1, y: -23.3}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1151850981
@@ -7825,7 +7817,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -25.5}
+  m_AnchoredPosition: {x: 0, y: -7.4}
   m_SizeDelta: {x: 140, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1187719075
@@ -7902,7 +7894,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -8461,7 +8453,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6.9}
+  m_AnchoredPosition: {x: 0, y: -27.1}
   m_SizeDelta: {x: 140, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1222446122
@@ -8538,7 +8530,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -9146,9 +9138,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
+  m_text: 'The captain called
 
-    Your hear them'
+
+
+    suspects a incoming mutiny'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -9699,9 +9693,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    You hear'
+  m_text: "\nYou need to escape the \n\n\nprison"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -10104,8 +10096,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000022769}
-  m_SizeDelta: {x: 140, y: 62.0675}
+  m_AnchoredPosition: {x: 0, y: -48.3494}
+  m_SizeDelta: {x: 140, y: 41.7664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1346685556
 MonoBehaviour:
@@ -10175,13 +10167,13 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 1
+  m_LineType: 2
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -11994,7 +11986,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    The crew looks'
+    You travel on a ship named'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -12271,7 +12263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nRoll for \n\ninitiative!"
+  m_text: "\nWhat is your \n\nnext move?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -12784,7 +12776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nWhat do you \n\nwant to do?"
+  m_text: "\nRoll for \n\ninitiative!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -13315,7 +13307,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -7.8}
+  m_AnchoredPosition: {x: 0, y: -27.2}
   m_SizeDelta: {x: 140, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1666117918
@@ -13392,7 +13384,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -13679,12 +13671,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    You see
-
-
-
-
-    running past you...'
+    In the barony of '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -14072,9 +14059,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-    You feel like'
+  m_text: "An artifact is to be retrieved out of the old \n\nmonastery"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -14567,7 +14552,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 14
-  m_CharacterLimit: 40
+  m_CharacterLimit: 20
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
@@ -15773,12 +15758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'They tell you about a
-
-
-
-
-    in the village...'
+  m_text: "there you meet up \nin a rustic tavern called"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
@@ -15964,6 +15944,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 296003982}
     m_Modifications:
+    - target: {fileID: 1515006468165775371, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1901409141292483684, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: fieldID
       value: Tavern1
@@ -15972,6 +15956,18 @@ PrefabInstance:
       propertyPath: reactionGroup
       value: 
       objectReference: {fileID: 80471213}
+    - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_LineType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_CharacterLimit
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3752932010754312135, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: m_Name
       value: StoryPartTavern2
@@ -16056,6 +16052,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4119132329892834393, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_text
+      value: You find yourself in the small village of
+      objectReference: {fileID: 0}
     - target: {fileID: 4736944904054424728, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -16079,6 +16079,10 @@ PrefabInstance:
     - target: {fileID: 5051612472037526985, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: m_SizeDelta.y
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564504230582851279, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40.86302
       objectReference: {fileID: 0}
     - target: {fileID: 6755567006278800018, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: m_Sprite
