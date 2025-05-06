@@ -16,18 +16,29 @@ public class StoryManager : MonoBehaviour
     void Update()
     {   
         //get all Instances of the script
-        DragNDropStories[] allInstances = FindObjectsOfType<DragNDropStories>();
+        DragNDropStories[] allDNDInstances = FindObjectsOfType<DragNDropStories>();
+        StoryInput[] allSIInstances = FindObjectsOfType<StoryInput>();
 
         //check if correctPos from DragNDropStories is true in all instances
         bool allCorrect = true;
-        foreach(var instance in allInstances)
+        foreach(var instance in allDNDInstances)
         {
             if(!instance.correctPos)
             {
                 allCorrect = false;
             }
         }
-        if(allCorrect)
+        //check if all input fields have input
+        bool allFilled = true;
+        foreach(var instance in allSIInstances)
+        {
+            if(!instance.inputDone)
+            {
+                allFilled = false;
+            }
+        }
+
+        if(allCorrect && allFilled)
         {   
             //show story selection
             storySelection.SetActive(true);

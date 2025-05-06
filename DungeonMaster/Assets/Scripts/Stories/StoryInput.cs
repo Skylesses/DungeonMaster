@@ -13,6 +13,13 @@ public class StoryInput : MonoBehaviour
     [SerializeField] private GameObject reactionGroup;
     [SerializeField] private TMP_Text reactionTextBox;
 
+    public bool inputDone;
+
+    void Start()
+    {
+        inputDone = false;
+    }
+
     //Get text from input
     public void GrabFromInput(string input)
     {
@@ -37,5 +44,17 @@ public class StoryInput : MonoBehaviour
     public string GetInput()
     {
         return inputText;
+    }
+
+    void Update()
+    {
+        if(!string.IsNullOrWhiteSpace(inputText))
+        {
+            inputDone = true;
+        }
+        else
+        {
+            inputDone = false;
+        }
     }
 }
