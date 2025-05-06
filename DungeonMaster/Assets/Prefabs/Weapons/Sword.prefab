@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 161284532394935328}
   - component: {fileID: 7447176576334702296}
   - component: {fileID: 4981868359418311802}
+  - component: {fileID: -6320604557791116868}
   m_Layer: 0
   m_Name: Sword
   m_TagString: sword
@@ -151,3 +152,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasRect: {fileID: 0}
+--- !u!114 &-6320604557791116868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6487381173264927141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d33eca283759b0447b7684eda1bf78ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponSprites:
+  - {fileID: 21300000, guid: 55b62d62c75147945988a5c59a7ee1f8, type: 3}
+  - {fileID: 21300000, guid: 7a2a6d2c522e92e48b2d5004b633b178, type: 3}
+  - {fileID: 21300000, guid: 6de08f7db30771d4794fb933839c1a48, type: 3}
+  newSprite: {fileID: 0}

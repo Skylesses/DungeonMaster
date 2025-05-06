@@ -98,7 +98,7 @@ public class MapBuildManager : MonoBehaviour
         CheckIfFull();
     }
 
-    //delete tile
+    //delete tile on mouse position
     void DeleteTile()
     {
         Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
