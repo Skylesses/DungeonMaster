@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropPosArray: []
-  dropDistance: 20
+  dropDistance: 30
   isLocked: 0
 --- !u!114 &109714611233531782
 MonoBehaviour:
