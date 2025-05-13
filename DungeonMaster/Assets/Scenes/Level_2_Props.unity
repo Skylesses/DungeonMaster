@@ -884,6 +884,7 @@ GameObject:
   m_Component:
   - component: {fileID: 374788605}
   - component: {fileID: 374788606}
+  - component: {fileID: 374788607}
   m_Layer: 0
   m_Name: PropsManager
   m_TagString: Untagged
@@ -923,6 +924,22 @@ MonoBehaviour:
   jailProps: {fileID: 1302113899}
   woodsProps: {fileID: 78242835}
   nextLevel: {fileID: 878648277}
+--- !u!114 &374788607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374788604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e481d12aa43cfd449aa63563e3a264d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPosBig: {x: 0, y: 0, z: 0}
+  spawnPosSmallOne: {x: 0, y: 0, z: 0}
+  spawnPossmallTwo: {x: 0, y: 0, z: 0}
+  spawnPossmallThree: {x: 0, y: 0, z: 0}
 --- !u!1 &401620319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2670,9 +2687,37 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 374788606}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 374788607}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SaveInCache
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SaveProps, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6705481077164418045, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7535645636455236891, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_Name
       value: NextLevel
@@ -3931,8 +3976,8 @@ RectTransform:
   - {fileID: 829947946}
   - {fileID: 2050255529}
   - {fileID: 1039540134}
-  - {fileID: 1139361775}
   - {fileID: 8154831646285787445}
+  - {fileID: 1139361775}
   - {fileID: 532937530}
   - {fileID: 1264966453}
   - {fileID: 372783880}

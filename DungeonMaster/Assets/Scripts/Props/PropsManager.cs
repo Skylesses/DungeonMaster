@@ -12,6 +12,11 @@ public class PropsManager : MonoBehaviour
 
     public GameObject nextLevel;
 
+    public GameObject big;
+    public GameObject smallOne;
+    public GameObject smallTwo;
+    public GameObject smallThree;
+
     // Start is called before the first frame update
     void Start()
     {
