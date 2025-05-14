@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DicebagController : MonoBehaviour
 {
@@ -20,9 +21,16 @@ public class DicebagController : MonoBehaviour
 
     Vector3 objStartPos;
 
+    public GameObject nextLevel;
+    //count of dice spawned
+    private int diceCount;
+
     private void Start()
     {   //starting position
         objStartPos = dragObj.transform.position;
+
+        nextLevel.SetActive(false);
+        diceCount = 0;
     }
 
     private Vector3 GetMousePos()
@@ -67,7 +75,18 @@ public class DicebagController : MonoBehaviour
         {
             int randomIndex = Random.Range(0, dice.Length);
             Instantiate(dice[randomIndex], new Vector3(dragObj.transform.position.x, dragObj.transform.position.y), dice[randomIndex].transform.rotation);
+            diceCount++;
             yield return new WaitForSeconds(spawnInterval);
+            //dice count 
+            if(diceCount >= 20)
+            {
+                nextLevel.SetActive(true);
+            }
         }
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene("Level_4.1_Map");
     }
 }

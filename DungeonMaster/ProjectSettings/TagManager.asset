@@ -12,6 +12,7 @@ TagManager:
   - shield
   - club
   - dice
+  - dice1
   layers:
   - Default
   - TransparentFX

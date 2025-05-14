@@ -2,15 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyObj : MonoBehaviour
+public class DiceJail : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("dice"))
-        {
-            Destroy(other.gameObject);
-        }
-        else if(other.gameObject.CompareTag("dice1"))
+        if(other.gameObject.CompareTag("dice1"))
         {
             Destroy(other.gameObject);
         }
