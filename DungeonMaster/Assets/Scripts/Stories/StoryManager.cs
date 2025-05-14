@@ -6,10 +6,14 @@ public class StoryManager : MonoBehaviour
 {   
     public GameObject storySelection;
     public GameObject nextLevel;
+    public GameObject startText;
+    public GameObject choiceText;
 
     private void Start()
     {
         storySelection.SetActive(false);
+        startText.SetActive(true);
+        choiceText.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,7 +46,15 @@ public class StoryManager : MonoBehaviour
         {   
             //show story selection
             storySelection.SetActive(true);
+            choiceText.SetActive(true);
+            startText.SetActive(false);
             Debug.Log("you're god damn right");
+        }
+        else
+        {
+            storySelection.SetActive(false);
+            choiceText.SetActive(false);
+            startText.SetActive(true);
         }
     }
 }

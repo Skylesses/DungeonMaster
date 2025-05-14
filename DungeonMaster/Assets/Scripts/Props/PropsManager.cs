@@ -11,6 +11,8 @@ public class PropsManager : MonoBehaviour
     public GameObject woodsProps;
 
     public GameObject nextLevel;
+    public GameObject startText;
+    public GameObject endText;
 
     public GameObject big;
     public GameObject smallOne;
@@ -21,6 +23,8 @@ public class PropsManager : MonoBehaviour
     void Start()
     {
         nextLevel.SetActive(false);
+        startText.SetActive(true);
+        endText.SetActive(false);
 
         tavernProps.SetActive(false);
         shipProps.SetActive(false);
@@ -70,6 +74,8 @@ public class PropsManager : MonoBehaviour
         }
         //set nextLevel active
         nextLevel.SetActive(allPropsLocked && allWeaponsLocked);
+        startText.SetActive(!allPropsLocked && !allWeaponsLocked);
+        endText.SetActive(allPropsLocked && allWeaponsLocked);
     }
 
     //load next scene
