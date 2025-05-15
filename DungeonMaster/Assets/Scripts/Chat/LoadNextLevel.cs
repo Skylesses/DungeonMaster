@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class LoadNextLevel : MonoBehaviour
 {
+    public string nextScene;
+
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("Level_1_Story");
+        SceneManager.LoadScene(nextScene);
     }
 }

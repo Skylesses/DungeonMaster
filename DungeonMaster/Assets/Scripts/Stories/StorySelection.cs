@@ -10,6 +10,7 @@ public class StorySelection : MonoBehaviour
     public static bool ship;
     public static bool woods;
     public GameObject nextLevel;
+    public string nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -60,6 +61,6 @@ public class StorySelection : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("Level_2_Props");
+        SceneManager.LoadScene(nextScene);
     }
 }

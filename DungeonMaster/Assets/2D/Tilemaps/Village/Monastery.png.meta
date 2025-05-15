@@ -411,6 +411,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Monastery_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba9e8801995cec40aff366d382081f0
+      internalID: -1939569327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -429,6 +450,7 @@ TextureImporter:
       Monastery_12: -1251343765
       Monastery_13: 751555391
       Monastery_14: -1860455852
+      Monastery_15: -1939569327
       Monastery_2: 1134590038
       Monastery_3: -857997384
       Monastery_4: 1811801351

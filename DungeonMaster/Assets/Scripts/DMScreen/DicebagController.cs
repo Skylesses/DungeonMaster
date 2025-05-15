@@ -25,6 +25,8 @@ public class DicebagController : MonoBehaviour
     //count of dice spawned
     private int diceCount;
 
+    public string nextScene;
+
     private void Start()
     {   //starting position
         objStartPos = dragObj.transform.position;
@@ -87,6 +89,6 @@ public class DicebagController : MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("Level_4.1_Map");
+        SceneManager.LoadScene(nextScene);
     }
 }

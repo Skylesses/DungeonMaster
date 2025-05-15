@@ -10,6 +10,11 @@ public class TilesManager : MonoBehaviour
     public GameObject jailTiles;
     public GameObject woodsTiles;
 
+    public GameObject tavernText;
+    public GameObject shipText;
+    public GameObject jailText;
+    public GameObject woodsText;
+
     public string nextLevel;
 
     // Start is called before the first frame update
@@ -23,18 +28,22 @@ public class TilesManager : MonoBehaviour
         if (StorySelection.tavern == true)
         {
             tavernTiles.SetActive(true);
+            tavernText.SetActive(true);
         }
         if (StorySelection.ship == true)
         {
             shipTiles.SetActive(true);
+            shipText.SetActive(true);
         }
         if (StorySelection.jail == true)
         {
             jailTiles.SetActive(true);
+            jailText.SetActive(true);
         }
         if (StorySelection.woods == true)
         {
             woodsTiles.SetActive(true);
+            woodsText.SetActive(true);
         }
     }
 

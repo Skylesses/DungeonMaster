@@ -163,8 +163,8 @@ TextureImporter:
       name: WoodsCamp_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
+        x: 192
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -184,7 +184,7 @@ TextureImporter:
       name: WoodsCamp_4
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 192
         width: 64
         height: 64
@@ -205,7 +205,7 @@ TextureImporter:
       name: WoodsCamp_5
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 192
         width: 64
         height: 64
@@ -226,8 +226,8 @@ TextureImporter:
       name: WoodsCamp_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -247,8 +247,8 @@ TextureImporter:
       name: WoodsCamp_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
+        x: 192
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -268,8 +268,8 @@ TextureImporter:
       name: WoodsCamp_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
+        x: 256
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -290,7 +290,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -311,7 +311,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -332,7 +332,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -352,8 +352,8 @@ TextureImporter:
       name: WoodsCamp_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 192
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -373,8 +373,8 @@ TextureImporter:
       name: WoodsCamp_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
+        x: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -394,8 +394,8 @@ TextureImporter:
       name: WoodsCamp_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
+        x: 64
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -407,6 +407,111 @@ TextureImporter:
       bones: []
       spriteID: 7835c056cef3d7845b4b9fe6f0f54705
       internalID: 1514663055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodsCamp_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131ef1101d951b74e9001b66e1681200
+      internalID: 1042087460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodsCamp_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a249f645cd4f28844b550a3c4bfb752d
+      internalID: 1505560990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodsCamp_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93af974d21b762844ba9b7c0e45d97a3
+      internalID: -1353166339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodsCamp_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbd3f09cbcfc684981d89d453df314c
+      internalID: -1543822900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WoodsCamp_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a16c0f0635db542a2164e0d126ebef
+      internalID: 1575095317
       vertices: []
       indices: 
       edges: []
@@ -429,6 +534,11 @@ TextureImporter:
       WoodsCamp_12: -1809587503
       WoodsCamp_13: 1110850861
       WoodsCamp_14: 1514663055
+      WoodsCamp_15: 1042087460
+      WoodsCamp_16: 1505560990
+      WoodsCamp_17: -1353166339
+      WoodsCamp_18: -1543822900
+      WoodsCamp_19: 1575095317
       WoodsCamp_2: -977371088
       WoodsCamp_3: 1348247655
       WoodsCamp_4: -259505465

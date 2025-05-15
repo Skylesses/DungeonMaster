@@ -19,6 +19,8 @@ public class PropsManager : MonoBehaviour
     public GameObject smallTwo;
     public GameObject smallThree;
 
+    public string nextScene;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,8 +83,6 @@ public class PropsManager : MonoBehaviour
     //load next scene
     public void LoadNextScene()
     {
-        //MUSS NOCH ZURÜCK ZU LEVEL 3 (LEVEL 4 NUR FÜRS TESTEN)!!!!!
-        //SceneManager.LoadScene("Level_3_DMScreen");
-        SceneManager.LoadScene("Level_4.1_Map");
+        SceneManager.LoadScene(nextScene);
     }
 }
