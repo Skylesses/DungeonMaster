@@ -25,6 +25,12 @@ public class DicebagController : MonoBehaviour
     //count of dice spawned
     private int diceCount;
 
+    //text
+    public GameObject startText;
+    public GameObject nextTextOne;
+    public GameObject nextTextTwo;
+    public GameObject nextTextThree;
+
     public string nextScene;
 
     private void Start()
@@ -33,6 +39,8 @@ public class DicebagController : MonoBehaviour
 
         nextLevel.SetActive(false);
         diceCount = 0;
+
+        startText.SetActive(true);
     }
 
     private Vector3 GetMousePos()
@@ -83,6 +91,18 @@ public class DicebagController : MonoBehaviour
             if(diceCount >= 20)
             {
                 nextLevel.SetActive(true);
+                startText.SetActive(false);
+                nextTextOne.SetActive(true);
+            }
+            if(diceCount >= 35)
+            {
+                nextTextOne.SetActive(false);
+                nextTextTwo.SetActive(true);
+            }
+            if(diceCount >= 50)
+            {
+                nextTextTwo.SetActive(false);
+                nextTextThree.SetActive(true);
             }
         }
     }
