@@ -930,7 +930,7 @@ MonoBehaviour:
   smallOne: {fileID: 0}
   smallTwo: {fileID: 0}
   smallThree: {fileID: 0}
-  nextScene: Level_4.1_Map
+  nextScene: Level_3_DMScreen
 --- !u!114 &374788607
 MonoBehaviour:
   m_ObjectHideFlags: 0
