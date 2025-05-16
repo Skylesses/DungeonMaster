@@ -4,34 +4,34 @@ using UnityEngine;
 
 public class EndingManager : MonoBehaviour
 {
-    public GameObject tavernText;
-    public GameObject shipText;
-    public GameObject jailText;
-    public GameObject woodText;
+    public GameObject tavern;
+    public GameObject ship;
+    public GameObject jail;
+    public GameObject wood;
 
     // Start is called before the first frame update
     void Start()
     {
-        tavernText.SetActive(false);
-        shipText.SetActive(false);
-        jailText.SetActive(false);
-        woodText.SetActive(false);
+        tavern.SetActive(false);
+        ship.SetActive(false);
+        jail.SetActive(false);
+        wood.SetActive(false);
 
         if (StorySelection.tavern == true)
         {
-            tavernText.SetActive(true);
+            tavern.SetActive(true);
         }
         if (StorySelection.ship == true)
         {
-            shipText.SetActive(true);
+            ship.SetActive(true);
         }
         if (StorySelection.jail == true)
         {
-            jailText.SetActive(true);
+            jail.SetActive(true);
         }
         if (StorySelection.woods == true)
         {
-            woodText.SetActive(true);
+            wood.SetActive(true);
         }
     }
 

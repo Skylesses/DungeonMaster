@@ -14,11 +14,6 @@ public class PropsManager : MonoBehaviour
     public GameObject startText;
     public GameObject endText;
 
-    public GameObject big;
-    public GameObject smallOne;
-    public GameObject smallTwo;
-    public GameObject smallThree;
-
     public string nextScene;
 
     // Start is called before the first frame update

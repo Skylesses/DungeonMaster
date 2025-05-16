@@ -15,4 +15,6 @@ public class WeaponSprite : MonoBehaviour
         currentIndex = (currentIndex + 1) % weaponSprites.Length;
         gameObject.GetComponent<Image>().sprite = newSprite;
     }
+
+
 }
