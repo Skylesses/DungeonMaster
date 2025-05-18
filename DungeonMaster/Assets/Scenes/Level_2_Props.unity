@@ -938,7 +938,7 @@ MonoBehaviour:
   nextLevel: {fileID: 878648277}
   startText: {fileID: 557609246}
   endText: {fileID: 1205318083}
-  nextScene: Ending
+  nextScene: Level_3_DMScreen
 --- !u!114 &374788608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2918,6 +2918,10 @@ PrefabInstance:
     - target: {fileID: 7535645636455236891, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
       propertyPath: m_Name
       value: NextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535645636455236891, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
