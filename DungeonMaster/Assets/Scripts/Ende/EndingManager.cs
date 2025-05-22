@@ -173,6 +173,10 @@ public class EndingManager : MonoBehaviour
 
     private IEnumerator CaptureAndSaveFullScreen(Action onComplete)
     {
+        Canvas.ForceUpdateCanvases();
+
+        yield return null;
+
         //ensure image is fully rendered
         yield return new WaitForEndOfFrame();
 
