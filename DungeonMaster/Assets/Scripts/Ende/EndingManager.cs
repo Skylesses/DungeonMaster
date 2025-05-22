@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.IO;
+using SFB;
 
 public class EndingManager : MonoBehaviour
 {   
@@ -76,68 +79,123 @@ public class EndingManager : MonoBehaviour
 
     //get next to Props
     public void changeToPropsOne()
-    {
-        tavernOS.SetActive(false);
-        shipOS.SetActive(false);
-        jailOS.SetActive(false);
-        woodsOS.SetActive(false);
+    {   
+        saveOneShot.SetActive(false);
 
-        if (StorySelection.tavern == true)
-        {
-            tavernOne.SetActive(true);
-        }
-        if (StorySelection.ship == true)
-        {
-            shipOne.SetActive(true);
-        }
-        if (StorySelection.jail == true)
-        {
-            jailOne.SetActive(true);
-        }
-        if (StorySelection.woods == true)
-        {
-            woodsOne.SetActive(true);
-        }
+        StartCoroutine(CaptureAndSaveFullScreen(() =>
+        {   
+            
+            tavernOS.SetActive(false);
+            shipOS.SetActive(false);
+            jailOS.SetActive(false);
+            woodsOS.SetActive(false);
+
+            if (StorySelection.tavern == true)
+            {
+                tavernOne.SetActive(true);
+            }
+            if (StorySelection.ship == true)
+            {
+                shipOne.SetActive(true);
+            }
+            if (StorySelection.jail == true)
+            {
+                jailOne.SetActive(true);
+            }
+            if (StorySelection.woods == true)
+            {
+                woodsOne.SetActive(true);
+            }           
+            savePropsOne.SetActive(true);
+        }));
     }
 
     public void changeToPropsTwo()
-    {
-        tavernOne.SetActive(false);
-        shipOne.SetActive(false);
-        jailOne.SetActive(false);
-        woodsOne.SetActive(false);
+    {   
+        savePropsOne.SetActive(false);
 
-        if (StorySelection.tavern == true)
+        StartCoroutine(CaptureAndSaveFullScreen(() =>
         {
-            tavernTwo.SetActive(true);
-        }
-        if (StorySelection.ship == true)
-        {
-            shipTwo.SetActive(true);
-        }
-        if (StorySelection.jail == true)
-        {
-            jailTwo.SetActive(true);
-        }
-        if (StorySelection.woods == true)
-        {
-            woodsTwo.SetActive(true);
-        }
+            
+            tavernOne.SetActive(false);
+            shipOne.SetActive(false);
+            jailOne.SetActive(false);
+            woodsOne.SetActive(false);
+
+            if (StorySelection.tavern == true)
+            {
+                tavernTwo.SetActive(true);
+            }
+            if (StorySelection.ship == true)
+            {
+                shipTwo.SetActive(true);
+            }
+            if (StorySelection.jail == true)
+            {
+               jailTwo.SetActive(true);
+            }
+            if (StorySelection.woods == true)
+            {
+               woodsTwo.SetActive(true);
+            }
+            savePropsTwo.SetActive(true);
+        }));
     }
 
     public void changeToMapOne()
     {
-        tavernTwo.SetActive(false);
-        shipTwo.SetActive(false);
-        jailTwo.SetActive(false);
-        woodsTwo.SetActive(false);
+        savePropsTwo.SetActive(false);
 
-        mapOne.SetActive(true);
+        StartCoroutine(CaptureAndSaveFullScreen(() =>
+        {
+            tavernTwo.SetActive(false);
+            shipTwo.SetActive(false);
+            jailTwo.SetActive(false);
+            woodsTwo.SetActive(false);
+
+            mapOne.SetActive(true);
+
+            saveMapOne.SetActive(true);
+        }));
     }
 
     public void changeToMapTwo()
     {
-        mapOne.SetActive(false);
-        mapTwo.SetActive(true);
+        saveMapOne.SetActive(false);
+
+        StartCoroutine(CaptureAndSaveFullScreen(() =>
+        {
+            mapOne.SetActive(false);
+            mapTwo.SetActive(true);
+
+        }));
+    }
+
+    private IEnumerator CaptureAndSaveFullScreen(Action onComplete)
+    {
+        //ensure image is fully rendered
+        yield return new WaitForEndOfFrame();
+
+        //capture screen as Texture2D
+        Texture2D screenTexture = ScreenCapture.CaptureScreenshotAsTexture();
+
+        //open file save dialog
+        string path = StandaloneFileBrowser.SaveFilePanel("Save Screenshot", "", "FullScreenImage", "png");
+
+        if (!string.IsNullOrEmpty(path))
+        {
+            byte[] pngData = screenTexture.EncodeToPNG();
+            File.WriteAllBytes(path, pngData);
+            Debug.Log("Saved full screen image to: " + path);
+        }
+        else
+        {
+            Debug.Log("Save cancelled.");
+        }
+
+        //clean up
+        //Object.Destroy(screenTexture);
+
+        onComplete?.Invoke();
     }
 }
