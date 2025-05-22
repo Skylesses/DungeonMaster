@@ -2757,6 +2757,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1078046714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7535645636455236891, guid: e7d3531665edcc14f9a02c65e4a0aa67, type: 3}
+  m_PrefabInstance: {fileID: 1436905641}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1082872468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4725,9 +4730,9 @@ MonoBehaviour:
   mapOne: {fileID: 1608852093}
   mapTwo: {fileID: 533996779}
   saveOneShot: {fileID: 1665999843}
-  savePropsOne: {fileID: 1665999843}
-  savePropsTwo: {fileID: 1607601120}
-  saveMapOne: {fileID: 1015748499}
+  savePropsOne: {fileID: 1607601120}
+  savePropsTwo: {fileID: 1015748499}
+  saveMapOne: {fileID: 1078046714}
   saveMapTwo: {fileID: 2043998724}
 --- !u!1 &1715567019
 GameObject:
