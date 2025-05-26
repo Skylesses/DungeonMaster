@@ -168,6 +168,7 @@ public class EndingManager : MonoBehaviour
             mapOne.SetActive(false);
             mapTwo.SetActive(true);
 
+            saveMapTwo.SetActive(true);
         }));
     }
 
