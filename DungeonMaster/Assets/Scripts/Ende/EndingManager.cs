@@ -181,7 +181,7 @@ public class EndingManager : MonoBehaviour
         //ensure image is fully rendered
         yield return new WaitForEndOfFrame();
 
-        //capture screen as Texture2D
+        //capture screen
         Texture2D screenTexture = ScreenCapture.CaptureScreenshotAsTexture();
 
         //open file save dialog
