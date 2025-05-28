@@ -31,7 +31,7 @@ public class GetTilemapSprite : MonoBehaviour
         Sprite sprite = MapSprite.GlobalSpriteStorage.savedSprite;
         Texture2D texture = sprite.texture;
 
-        // Optional: Crop to the sprite's rect
+        //crop to sprite rect
         Rect rect = sprite.rect;
         Texture2D croppedTexture = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.RGBA32, false);
         Color[] pixels = texture.GetPixels((int)rect.x, (int)rect.y, (int)rect.width, (int)rect.height);
