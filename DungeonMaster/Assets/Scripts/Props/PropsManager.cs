@@ -71,7 +71,7 @@ public class PropsManager : MonoBehaviour
         }
         //set nextLevel active
         nextLevel.SetActive(allPropsLocked && allWeaponsLocked);
-        startText.SetActive(!allPropsLocked && !allWeaponsLocked);
+        startText.SetActive(!allPropsLocked || !allWeaponsLocked);
         endText.SetActive(allPropsLocked && allWeaponsLocked);
     }
 
