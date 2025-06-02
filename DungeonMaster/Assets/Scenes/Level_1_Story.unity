@@ -5508,7 +5508,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 680, y: 50}
+  m_SizeDelta: {x: 1180, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &887548567
 MonoBehaviour:
@@ -5530,7 +5530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: My notes are totally scrambled...
+  m_text: My notes are totally scrambled and there are still gaps...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 02225dff76583d54388cd9a089015e90, type: 2}
   m_sharedMaterial: {fileID: 3688459196640977477, guid: 02225dff76583d54388cd9a089015e90, type: 2}
