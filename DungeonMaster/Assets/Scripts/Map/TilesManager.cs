@@ -5,16 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class TilesManager : MonoBehaviour
 {
+    [Header("Tiles")]
     public GameObject tavernTiles;
     public GameObject shipTiles;
     public GameObject jailTiles;
     public GameObject woodsTiles;
 
+    [Header("UI")]
     public GameObject tavernText;
     public GameObject shipText;
     public GameObject jailText;
     public GameObject woodsText;
 
+    [Header("Next Level")]
     public string nextLevel;
 
     // Start is called before the first frame update

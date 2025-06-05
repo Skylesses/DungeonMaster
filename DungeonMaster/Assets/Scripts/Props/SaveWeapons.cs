@@ -5,15 +5,22 @@ using UnityEngine.UI;
 
 public class SaveWeapons : MonoBehaviour
 {
+    [Header("Tavern")]
     public Image skeletSword;
     public Image skeletSpear;
     public Image skeletShieldOne;
     public Image skeletShieldTwo;
+
+    [Header("Ship")]
     public Image sailorSword;
     public Image banditSwordOne;
     public Image banditSwordTwo;
+
+    [Header("Jail")]
     public Image guardSword;
     public Image guardShield;
+
+    [Header("Woods")]
     public Image goblinClub;
     public Image golbinSword;
 

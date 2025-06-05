@@ -5,15 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class PropsManager : MonoBehaviour
 {
+    [Header("Props")]
     public GameObject tavernProps;
     public GameObject shipProps;
     public GameObject jailProps;
     public GameObject woodsProps;
 
+    [Header("UI")]
     public GameObject nextLevel;
     public GameObject startText;
     public GameObject endText;
 
+    [Header("Next Level")]
     public string nextScene;
 
     // Start is called before the first frame update
