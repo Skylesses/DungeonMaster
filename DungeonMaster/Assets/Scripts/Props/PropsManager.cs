@@ -31,6 +31,7 @@ public class PropsManager : MonoBehaviour
         jailProps.SetActive(false);
         woodsProps.SetActive(false);
 
+        //set gameobjects active, depending on story choice
         if (StorySelection.tavern == true)
         {
             tavernProps.SetActive(true);
