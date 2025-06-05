@@ -1433,7 +1433,7 @@ GameObject:
   - component: {fileID: 770170066}
   - component: {fileID: 770170068}
   m_Layer: 0
-  m_Name: Dicebag
+  m_Name: Dicebag_DMScreenManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
