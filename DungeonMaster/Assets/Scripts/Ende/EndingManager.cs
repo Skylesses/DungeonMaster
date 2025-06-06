@@ -77,7 +77,7 @@ public class EndingManager : MonoBehaviour
         }
     }
 
-    //get next to Props
+    //go next to Props
     public void changeToPropsOne()
     {   
         saveOneShot.SetActive(false);
@@ -110,6 +110,7 @@ public class EndingManager : MonoBehaviour
         }));
     }
 
+    //go next to Props part 2
     public void changeToPropsTwo()
     {   
         savePropsOne.SetActive(false);
@@ -142,6 +143,7 @@ public class EndingManager : MonoBehaviour
         }));
     }
 
+    //go next to Map
     public void changeToMapOne()
     {
         savePropsTwo.SetActive(false);
@@ -159,6 +161,7 @@ public class EndingManager : MonoBehaviour
         }));
     }
 
+    //go next to Map part 2
     public void changeToMapTwo()
     {
         saveMapOne.SetActive(false);
