@@ -22,6 +22,7 @@ public class DicebagController : MonoBehaviour
     Vector3 objStartPos;
 
     public GameObject nextLevel;
+
     //count of dice spawned
     private int diceCount;
 
