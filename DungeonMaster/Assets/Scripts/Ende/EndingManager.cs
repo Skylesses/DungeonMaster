@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using System.IO;
 using SFB;
+using UnityEngine.SceneManagement;
 
 public class EndingManager : MonoBehaviour
 {   
@@ -33,6 +34,9 @@ public class EndingManager : MonoBehaviour
     public GameObject savePropsTwo;
     public GameObject saveMapOne;
     public GameObject saveMapTwo;
+
+    [Header("Next Scene")]
+    public string nextScene;
 
     // Start is called before the first frame update
     void Start()
@@ -173,6 +177,11 @@ public class EndingManager : MonoBehaviour
 
             saveMapTwo.SetActive(true);
         }));
+    }
+
+    public void LoadNextScene()
+    {
+        SceneManager.LoadScene(nextScene);
     }
 
     private IEnumerator CaptureAndSaveFullScreen(Action onComplete)
