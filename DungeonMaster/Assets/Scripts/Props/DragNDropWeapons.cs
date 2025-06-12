@@ -16,6 +16,9 @@ public class DragNDropWeapons : MonoBehaviour, IPointerClickHandler
     public float dropDistance;
     public bool isLocked;
 
+    public AudioSource soundFx;
+    public AudioClip sound;
+
     //public GameObject otherObj;
     //private DragNDrop otherObjscript;
 
@@ -84,6 +87,7 @@ public class DragNDropWeapons : MonoBehaviour, IPointerClickHandler
             dragObj.transform.position = nearestDropPos.transform.position;
             occupiedDropSpots[nearestDropPos] = dragObj;
             dragObj.transform.SetParent(nearestDropPos.transform);
+            soundFx.PlayOneShot(sound);
         }
         //reset obj
         else

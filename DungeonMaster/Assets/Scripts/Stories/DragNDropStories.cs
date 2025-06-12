@@ -19,6 +19,9 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
     public bool isLocked;
     public bool correctPos;
 
+    public AudioSource soundFx;
+    public AudioClip sound;
+
     //private DragNDropStories otherObjScript;
 
     Vector3 objStartPos;
@@ -64,6 +67,7 @@ public class DragNDropStories : MonoBehaviour,  IPointerClickHandler
         {
             isLocked = true;
             dragObj.transform.position = nearestDropPos.transform.position;
+            soundFx.PlayOneShot(sound);
         }
         //reset obj
         else
