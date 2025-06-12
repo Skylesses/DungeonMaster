@@ -1449,8 +1449,8 @@ MonoBehaviour:
   woodsTiles: {fileID: 477365305}
   tavernText: {fileID: 32217444}
   shipText: {fileID: 134358981}
-  jailText: {fileID: 134358981}
-  woodsText: {fileID: 373137949}
+  jailText: {fileID: 373137949}
+  woodsText: {fileID: 859176391}
   nextLevel: Ending
 --- !u!114 &1231977088
 MonoBehaviour:
