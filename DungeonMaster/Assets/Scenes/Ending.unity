@@ -532,7 +532,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &100608095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -684,6 +684,18 @@ PrefabInstance:
     - target: {fileID: 1387016127448191923, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
       objectReference: {fileID: 0}
     - target: {fileID: 4169423231007609261, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
       propertyPath: fieldID
@@ -1947,6 +1959,22 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278526840
+      objectReference: {fileID: 0}
     - target: {fileID: 5404863607626539288, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: fieldID
       value: Tavern2
@@ -2053,6 +2081,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2029638949}
     m_Modifications:
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 3336046311662898352, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
       propertyPath: m_Name
       value: Prison (1)
@@ -3297,6 +3337,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2029638949}
     m_Modifications:
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 3336046311662898352, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
       propertyPath: m_Name
       value: Prison (2)
@@ -4351,15 +4403,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.1137255
+      value: 0.02002491
       objectReference: {fileID: 0}
     - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.1137255
+      value: 0.1378527
       objectReference: {fileID: 0}
     - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_fontColor.r
-      value: 0.63529414
+      value: 0.4716981
       objectReference: {fileID: 0}
     - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_fontSizeBase
@@ -4367,7 +4419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4280098210
+      value: 4278526840
       objectReference: {fileID: 0}
     - target: {fileID: 5404863607626539288, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: fieldID
@@ -6151,6 +6203,18 @@ PrefabInstance:
       propertyPath: m_text
       value: New Text
       objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 6788312087149406716, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
       propertyPath: m_Name
       value: Ship (2)
@@ -6333,6 +6397,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953635973}
     m_Modifications:
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 6788312087149406716, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
       propertyPath: m_Name
       value: Ship (1)
@@ -6528,6 +6604,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3527132663487671774, guid: 305bcbbef687b304a9a304e85dec4d6d, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6546,6 +6634,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1953635973}
     m_Modifications:
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 1186427785487993612, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 6788312087149406716, guid: 7fdfc4ec54db05d4983d1d21ca4af8bf, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -6643,6 +6743,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2029638949}
     m_Modifications:
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081910485637884515, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     - target: {fileID: 3336046311662898352, guid: ff1003f8d2c7d964cabaf6ac307fd417, type: 3}
       propertyPath: m_Name
       value: Prison
@@ -6745,6 +6857,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 100608095}
     m_Modifications:
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.02002491
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.1378527
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 232710152545455519, guid: 8476261821a424040a77f11a4247d216, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278526840
+      objectReference: {fileID: 0}
     - target: {fileID: 7856418150457687273, guid: 8476261821a424040a77f11a4247d216, type: 3}
       propertyPath: m_Name
       value: Tavern
