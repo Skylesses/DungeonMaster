@@ -638,8 +638,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -881,7 +885,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1341,25 +1345,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1302113900}
     m_Modifications:
-    - target: {fileID: 3573985087207703643, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dummy
+    - target: {fileID: 3232401462175029784, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3573985087207703643, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dragObj
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 8300000, guid: a7bd0bd00337c344a83d9320f36b4646, type: 3}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: soundFx
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -1373,10 +1369,6 @@ PrefabInstance:
       propertyPath: dropPosArray.Array.data[2]
       value: 
       objectReference: {fileID: 917931221}
-    - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7029225751257428575, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: m_Name
       value: Bandit (1)
@@ -1622,21 +1614,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
-      propertyPath: sound
+    - target: {fileID: 1880283166579076388, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
+      propertyPath: canvasRect
       value: 
-      objectReference: {fileID: 8300000, guid: a7bd0bd00337c344a83d9320f36b4646, type: 3}
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: soundFx
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: dropDistance
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
-      propertyPath: dropPosArray.Array.size
-      value: 2
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -1646,10 +1634,6 @@ PrefabInstance:
       propertyPath: dropPosArray.Array.data[1]
       value: 
       objectReference: {fileID: 401620319}
-    - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
-      propertyPath: dropPosArray.Array.data[2]
-      value: 
-      objectReference: {fileID: 917931221}
     - target: {fileID: 3210483924773762493, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1730,14 +1714,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5072595786023730642, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
-      propertyPath: dummy
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5072595786023730642, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
-      propertyPath: dragObj
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1760,25 +1736,13 @@ PrefabInstance:
       propertyPath: canvasRect
       value: 
       objectReference: {fileID: 1997019376}
-    - target: {fileID: 3573985087207703643, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dummy
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3573985087207703643, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dragObj
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: sound
-      value: 
-      objectReference: {fileID: 8300000, guid: a7bd0bd00337c344a83d9320f36b4646, type: 3}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: soundFx
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -1792,10 +1756,6 @@ PrefabInstance:
       propertyPath: dropPosArray.Array.data[2]
       value: 
       objectReference: {fileID: 917931221}
-    - target: {fileID: 4147221473150700926, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
-      propertyPath: dropPosArray.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7029225751257428575, guid: 0c17aae2a93e9ed4ebb7cac6b7d6fb89, type: 3}
       propertyPath: m_Name
       value: Bandit
@@ -1907,7 +1867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -2042,6 +2002,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1931443962}
     m_Modifications:
+    - target: {fileID: 1377349396242682759, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 2967443122821041707, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
       propertyPath: m_Name
       value: Sailor (1)
@@ -2136,7 +2100,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 7112009674088406592, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7112009674088406592, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -2403,7 +2367,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e4882bd2cbdbe61428b6bbacad17f5a6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3568,8 +3532,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -4015,7 +3983,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 3949567585144315852, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3949567585144315852, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -4033,6 +4001,10 @@ PrefabInstance:
       propertyPath: dropPosArray.Array.data[3]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5299380147374119464, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 6717540391956324963, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
       propertyPath: dummy
       value: 
@@ -4955,7 +4927,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -5248,7 +5220,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -5540,7 +5512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -5797,8 +5769,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -6454,6 +6430,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 112413092551259913, guid: dca89d56cd70dbf49a32580e32d48c47, type: 3}
+      propertyPath: dropDistance
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 112413092551259913, guid: dca89d56cd70dbf49a32580e32d48c47, type: 3}
       propertyPath: dropPosArray.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6579,6 +6559,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 1918825826202821345, guid: 2a47c6b43c6b9114ea9570bbce5b1c16, type: 3}
+      propertyPath: dropDistance
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1918825826202821345, guid: 2a47c6b43c6b9114ea9570bbce5b1c16, type: 3}
       propertyPath: dropPosArray.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -6701,7 +6685,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 4340373554361833386, guid: d55b19436bf634444a3f2e26db7f376e, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 4340373554361833386, guid: d55b19436bf634444a3f2e26db7f376e, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -6799,6 +6783,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8817883149056226087, guid: d55b19436bf634444a3f2e26db7f376e, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6943,7 +6931,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 3949567585144315852, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3949567585144315852, guid: 45ff10a31ba1c4a449bce2e86b93b855, type: 3}
       propertyPath: dropPosArray.Array.data[0]
@@ -7078,6 +7066,10 @@ PrefabInstance:
       propertyPath: soundFx
       value: 
       objectReference: {fileID: 374788610}
+    - target: {fileID: 3870601429496093042, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
+      propertyPath: dropDistance
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3870601429496093042, guid: bc62f1ba0382cf54b950002e70da4701, type: 3}
       propertyPath: dropPosArray.Array.data[0]
       value: 
@@ -7216,8 +7208,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 374788610}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
+      propertyPath: isLocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 161284532394935328, guid: 99b774b911561eb4b97ffb49ec0a9e6f, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -7464,7 +7460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7615828482901445189, guid: 1fe019578095f234c9401b0f552123e0, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -7516,7 +7512,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1364650381109176157, guid: 7b720c22102662244a9db8d952cb4ca5, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -7749,7 +7745,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 7112009674088406592, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7112009674088406592, guid: 6a80ad9045083634dadd08b2ae750cb1, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -7881,6 +7877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Goblin
       objectReference: {fileID: 0}
+    - target: {fileID: 1880283166579076388, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1997019376}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: sound
       value: 
@@ -7891,7 +7891,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 2454378381602817465, guid: e8f936a03ebaacc4fb43def561eb5f19, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -8020,7 +8020,7 @@ PrefabInstance:
       objectReference: {fileID: 374788610}
     - target: {fileID: -5162214404369219008, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
       propertyPath: dropDistance
-      value: 40
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: -5162214404369219008, guid: 44bad625538954d4aac2b4d6a95a3110, type: 3}
       propertyPath: dropPosArray.Array.size
@@ -8265,6 +8265,10 @@ PrefabInstance:
       propertyPath: soundFx
       value: 
       objectReference: {fileID: 374788610}
+    - target: {fileID: 2964223027363160177, guid: af369bfb40cf69047843a41c68c1f707, type: 3}
+      propertyPath: dropDistance
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 2964223027363160177, guid: af369bfb40cf69047843a41c68c1f707, type: 3}
       propertyPath: dropPosArray.Array.size
       value: 1

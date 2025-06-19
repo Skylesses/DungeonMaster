@@ -95,8 +95,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  dropDistance: 30
+  dropDistance: 50
   isLocked: 0
+  soundFx: {fileID: 0}
+  sound: {fileID: 8300000, guid: a7bd0bd00337c344a83d9320f36b4646, type: 3}
 --- !u!114 &4086875060971700964
 MonoBehaviour:
   m_ObjectHideFlags: 0
