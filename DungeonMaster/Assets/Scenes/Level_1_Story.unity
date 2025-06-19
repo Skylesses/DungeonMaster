@@ -231,7 +231,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &9086192
 MonoBehaviour:
@@ -1312,7 +1312,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -1368,7 +1368,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &178880633
 MonoBehaviour:
@@ -3205,7 +3205,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -3261,7 +3261,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &557698773
 MonoBehaviour:
@@ -5284,7 +5284,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &863953831
 MonoBehaviour:
@@ -6965,7 +6965,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -7021,7 +7021,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1083712080
 MonoBehaviour:
@@ -7723,7 +7723,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -7779,7 +7779,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1187719077
 MonoBehaviour:
@@ -8362,7 +8362,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -8418,7 +8418,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1222446124
 MonoBehaviour:
@@ -10008,7 +10008,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -10064,7 +10064,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1346685558
 MonoBehaviour:
@@ -13337,7 +13337,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -13393,7 +13393,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1666117920
 MonoBehaviour:
@@ -14602,7 +14602,7 @@ MonoBehaviour:
   m_InputType: 0
   m_AsteriskChar: 42
   m_KeyboardType: 0
-  m_LineType: 2
+  m_LineType: 1
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
@@ -14658,7 +14658,7 @@ MonoBehaviour:
   m_ResetOnDeActivation: 1
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 0
-  m_LineLimit: 3
+  m_LineLimit: 2
   m_InputValidator: {fileID: 0}
 --- !u!114 &1996367565
 MonoBehaviour:
@@ -16060,6 +16060,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
       propertyPath: m_LineType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
+      propertyPath: m_LineLimit
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2205364516333722735, guid: 4932fa57c4e47c146822a77f0bd98bb8, type: 3}
