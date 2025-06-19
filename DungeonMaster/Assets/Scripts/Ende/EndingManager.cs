@@ -170,13 +170,12 @@ public class EndingManager : MonoBehaviour
     {
         saveMapOne.SetActive(false);
 
-        StartCoroutine(CaptureAndSaveFullScreen(() =>
         {
             mapOne.SetActive(false);
             mapTwo.SetActive(true);
 
             saveMapTwo.SetActive(true);
-        }));
+        }
     }
 
     public void LoadNextScene()
